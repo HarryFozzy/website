@@ -1,0 +1,136 @@
+/* Colour Scheme - #000000 black, #14213D, #FCA311, #E5E5E5, #FFFFFF */
+:root {
+    --primary-color: #FFFFFF; /* try #212121 also for dark mode */
+    --background-color: #000000;
+    --border-color: #E5E5E5;
+    --title-color: #FCA311;
+    --tertiary-color: #14213D;
+    --font: sans-serif;
+  }
+
+
+#fullname {
+    font-size: xx-large;
+    z-index: 9;
+    margin: 3px auto;
+}
+
+.pagetitle{
+    font-size: 80px;
+    margin: 2% auto;
+    padding: auto;
+}
+
+hr.pageseparator {
+    background-color: #E5E5E5;
+    width: 60%;
+    border-top: 5px solid #E5E5E5;
+    border-radius: 5px;
+    margin: 1% auto;
+}
+
+hr.titleseparator{
+    background-color: #E5E5E5;
+    width: 60%;
+    border-top: 5px solid #E5E5E5;
+    border-radius: 5px;
+    margin: 1% 0%;    
+}
+
+#portrait {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #E5E5E5;
+}
+
+.homebuttonsleft {
+    left: 1%;
+    top: 1%;
+    width: 3%;
+    height: 6%;
+    position: absolute;
+}
+
+.homebuttonsright {
+    right: 1%;
+    top: 1%;
+    width: 3%;
+    height: 6%;
+    position: absolute;
+}
+
+header {
+    color: #FCA311;
+    background-color: #edf2f4;
+    text-align: center;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    border-radius: 0%;
+    margin: 0%;
+    padding: 0%;
+    top: 0%;
+    border: 10px solid #edf2f4;
+}
+
+nav {
+    width: 100%;
+}
+
+* {
+    /*border: 1px solid black;
+    border-width: 1px;*/
+    font-family: Helvetica;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #14213D;
+    color: #E5E5E5;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+}
+
+.sectiontitle {
+    text-align: center;
+    font-size: xx-large;
+    color: #FCA311;
+}
+
+section {
+    text-align: center;
+    margin: auto 20% ;
+    width: 60%;
+}
+
+.box {
+    margin: 2% 10%;
+    background-color: #FCA311;
+    padding: 1% auto;
+    border: 2px solid #FCA311;
+    border-radius: 20px ;
+    display: flex
+}
+
+.textbox {
+    margin: 1%;
+    width: 75%;
+    text-align: left;
+    display: inline-block;
+}
+
+.imagebox{
+    margin: 1%;
+    width: 20%;
+    height: 20%;
+    left: 0%;
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}

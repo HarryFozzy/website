@@ -1,0 +1,74 @@
+#unitable {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border:1px solid rgb(150, 146, 146);
+}
+
+th {
+    font-size: x-large;
+}
+
+td {
+    font-size: large;
+}
+
+.tableheader {
+    color: #FCA311;
+    text-align: center;
+    list-style: none;
+}
+
+#ModuleGrade {
+    font-size: larger;
+}
+
+.topbar {
+    display: inline-block;
+}
+
+.pastedu {
+    display: inline-block;
+}
+/*Exam results*/
+.Result h3 {
+    color: #FCA311;
+    text-align: center;
+}
+
+.Result h2 {
+    color: #FCA311;
+    text-align: center;
+}
+
+.Result li {
+    text-align: center;
+    list-style: none;
+}
+
+.tableheader {
+    text-align: center;
+    list-style: none;
+}
+
+.Result {
+    text-align: center;
+}
+
+#PastEdu {
+    width: 100%;
+}
+
+#PastEdu h2 {
+    color: #E5E5E5;
+}
+
+.EduParagraph {
+    width:50%;
+    margin: auto;
+}
+
+

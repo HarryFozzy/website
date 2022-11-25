@@ -1,0 +1,58 @@
+#PastEdu {
+  display: flex;
+}
+
+.cardholder {
+  width: 100%;
+  display: flex;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #FFFFFF;
+    transition: 0.3s;
+    width:25%;
+    border-radius: 5px;
+    background-color: #FCA311;
+    text-align: center;
+    margin: 2% auto;
+    display: inline-block;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 #FFFFFF;
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+    display: inline;
+  }
+
+  .noBullet {
+    list-style: none; 
+}
+
+.Subjects {
+    padding-left: 5%;
+    text-align: left;
+    margin-right: 15%;
+}
+
+.Results {
+    text-align: right;
+}
+
+.SecondarySchool {
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.College {
+    display: flex;
+    margin-left: 25%;
+    align-items: center;
+}
