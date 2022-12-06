@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #FFFFFF; /* try #212121 also for dark mode */
+  --background-color: #000000;
+  --border-color: #E5E5E5;
+  --title-color: #FCA311;
+  --tertiary-color: #14213D;
+  --header-color: #edf2f4;
+  --font: sans-serif;
+}
+
+
 #PastEdu {
   display: flex;
 }
@@ -8,18 +19,18 @@
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 #FFFFFF;
+    box-shadow: 0 4px 8px 0 var(--primary-color);
     transition: 0.3s;
     width:25%;
     border-radius: 5px;
-    background-color: #FCA311;
+    background-color: var(--title-color);
     text-align: center;
     margin: 2% auto;
     display: inline-block;
   }
   
   .card:hover {
-    box-shadow: 0 8px 16px 0 #FFFFFF;
+    box-shadow: 0 8px 16px 0 var(--border-color);
   }
   
   img {

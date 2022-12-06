@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../CSS/style.css" rel="stylesheet">
+	<link href="../CSS/nav.css" rel="stylesheet">
+	<script src="../JS/nav.js"></script>
+	<title>Harry's Website</title>
+</head>
+
+<header .class="titlebar">
+    <h1 id="fullname"><span style="font-size:30px;cursor:pointer" onclick="openNav()"> Harry Fotheringham</span></h1>
+    <a href="../index.html"><img src="../UI/home.png" class="homebuttonsleft"></a>
+    <a href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/" target="_blank"><img src="../UI/linkedin.png" class="homebuttonsright"></a>
+  </header>
+
+ <!-- The overlay -->
+ <div id="myNav" class="overlay">
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+      <a href="Education.html">Education</a>
+      <a href="Projects.html">Projects</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Placement.html">Placement Timeline</a>
+      <a href="Contact.html">Contact</a>
+      <a href="test.html">TestPage</a>
+  </div>
+</div>
+
+<body>
+
+	<div class="box">
+		<div class="imagebox" style="z-index:1">
+			<img src="/UI/DriveWorks-HarryF.jpg" alt="Picture of Harry Fotheringham" id="portrait">
+		</div>
+		<div class="textbox">
+			<h1 class="pagetitle">About Me</h1>
+			<hr class="titleseparator rounded">
+			<p>
+				My name is Harry Fotheringham, I have just completed my second year at the university of Leeds. I am studying
+				Aeronautical and Aerospace Engineering (MEng). I am a highly motivated individual, with a great interest in
+				mechanical design and manufacture and am very keen to take opportunities that will allow me to bring my ideas to
+				the industry. Enabling me to expand my
+				knowledge and my interests, this year as you my have guessed from my picture I am undertaking a industrial
+				placement year at DriveWorks Ltd. 
+			</p>
+		</div>
+	</div>
+
+
+	<!--
+	<div class="carousel">
+		<button class="carousel__button previous" id="previous"><</button>
+		<div class="carousel__images">
+			<img src="HelicopterProject.png" alt="Helicopter Project Code">
+			<img src="placeholder.png" alt="Helicopter Project Code">
+			<img src="placeholder.png" alt="Helicopter Project Code">
+			<img src="placeholder.png" alt="Helicopter Project Code">
+			<img src="placeholder.png" alt="Helicopter Project Code">
+			<img src="placeholder.png" alt="Helicopter Project Code">
+		</div>
+		<button class="carousel__button next" id="next">></button>	
+	</div>
+	-->
+
+	<hr class="pageseparator">
+	<section>
+		<div class="sectiontitle">
+			<h2>Skills</h2>
+		</div>
+		<img src="/UI/htmlskills.png" alt="HTML Logo" class="skills">
+		<img src="/UI/SQL.png" alt="HTML Logo" class="skills">
+
+		
+	</section>
+	
+	<hr class="pageseparator">
+	<section>
+		<div class="sectiontitle">
+			<h2>Hobbies</h2>
+		</div>
+		<p>Many things
+			Badminton
+			Football
+			Hockey
+			Clay Pigeon Shooting
+			3D printing
+
+		</p>
+	</section>
+
+	<hr class="pageseparator">
+	<section>
+		<div class="sectiontitle">
+			<h2>Interests</h2>
+		</div>
+		<p>Many more things
+			Sports
+			Physics
+			Animals
+		</p>
+	</section>
+	<hr class="pageseparator">
+
+	<section>
+		<p>Contact Info: <br> 
+		Email: mn20hjf@leeds.ac.uk </p>
+	</section>
+</body>
+
+</html>

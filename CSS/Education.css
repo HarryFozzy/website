@@ -1,3 +1,14 @@
+:root {
+    --primary-color: #FFFFFF; /* try #212121 also for dark mode */
+    --background-color: #000000;
+    --border-color: #E5E5E5;
+    --title-color: #FCA311;
+    --tertiary-color: #14213D;
+    --header-color: #edf2f4;
+    --font: sans-serif;
+  }
+
+
 #unitable {
     text-align: center;
     margin-left: auto;
@@ -17,7 +28,7 @@ td {
 }
 
 .tableheader {
-    color: #FCA311;
+    color: var(--title-color);
     text-align: center;
     list-style: none;
 }
@@ -35,12 +46,12 @@ td {
 }
 /*Exam results*/
 .Result h3 {
-    color: #FCA311;
+    color: var(--title-color);
     text-align: center;
 }
 
 .Result h2 {
-    color: #FCA311;
+    color: var(--title-color);
     text-align: center;
 }
 
@@ -63,7 +74,7 @@ td {
 }
 
 #PastEdu h2 {
-    color: #E5E5E5;
+    color: var(--border-color);
 }
 
 .EduParagraph {
