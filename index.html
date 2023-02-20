@@ -5,37 +5,124 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/CSS/style.css" rel="stylesheet">
-	<link href="/CSS/HomePage.css" rel="stylesheet">
+	<link href="../CSS/style.css" rel="stylesheet">
+	<link href="../CSS/nav.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
 	<title>Harry's Website</title>
 </head>
 
-
 <body>
-  <header .class="titlebar">
-		<h1 id="fullname">Harry Fotheringham</h1>
-    <a href="HomePage.html" ><img src="/UI/home.png" class="homebuttonsleft"></a>
-		<a href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/" target="_blank"><img src="/UI/linkedin.png" class="homebuttonsright"></a>
+	<header>
+		<h1 class="fullname">Harry Fotheringham</h1>
 	</header>
+	<section class="home">
+		<div class="open-overlay">
+			<span class="bar-top"></span>
+			<span class="bar-middle"></span>
+			<span class="bar-bottom"></span>
+		</div>
+	</section>
+	<div class="overlay-navigation">
+		<nav role="navigation">
+			<ul>
+				<li><a href="index.html" data-content="About me">Home</a></li>
+				<li><a href="/HTML/Education.html" data-content="Curious?">Education</a></li>
+				<li><a href="/HTML/Experience.html" data-content="I got game">Experience</a></li>
+				<li><a href="/HTML/Projects.html" data-content="Some of my finest work">Projects</a></li>
+				<li><a href="/HTML/test.html" data-content="Testing 1..2..3..">Test</a></li>
+			</ul>
+		</nav>
+	</div>
 
-<div class="container">
-    <input type="radio" name="slider" id="item-1" checked>
-    <input type="radio" name="slider" id="item-2">
-    <input type="radio" name="slider" id="item-3">
-  <div class="cards">
-    <label class="card" for="item-1" id="song-1">
-        <a href="/HTML/about.html" class="centered"><h2>About Me</h2></a>
-        <img src="/UI/DriveWorks-HarryF.jpg" alt="song">
-    </label>
-    <label class="card" for="item-2" id="song-2">
-        <a href="/HTML/Placement.html" class="centered"><h2>Work Experience</h2></a>
-      <img src="/UI/Work.jpg" alt="song">
-    </label>
-    <label class="card" for="item-3" id="song-3">
-        <a href="/HTML/Education.html" class="centered"><h2>Education</h2></a>
-      <img src="/UI/Education.png" alt="song">
-    </label>
-    </label>
-   </div>
-</div>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="../JS/nav.js"></script>
+	<section class="topcurve">
+
+		<div class="box">
+			<div class="imagebox" style="z-index:1">
+				<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<clipPath id="user-space" clipPathUnits="userSpaceOnUse">
+							<path fill="#FF0066"
+								d="M48.5,-69.1C60.5,-58.1,66.1,-40.7,69.7,-24C73.3,-7.3,74.9,8.8,72.6,26C70.3,43.2,64.2,61.6,51.5,70.3C38.7,79,19.4,78,-0.1,78.1C-19.6,78.2,-39.1,79.5,-54.3,71.6C-69.4,63.7,-80.2,46.6,-85.4,28.3C-90.6,10,-90.2,-9.6,-83.3,-26C-76.5,-42.4,-63.3,-55.6,-48.3,-65.6C-33.3,-75.7,-16.7,-82.6,0.8,-83.7C18.3,-84.8,36.6,-80.1,48.5,-69.1Z"
+								transform="translate(100 100)">
+							</path>
+						</clipPath>
+					</defs>
+					<image width="100%" height="100%" preserveAspectRatio="xMinYMin slice"
+						xlink:href="/UI/ME-Cropped.jpg" clip-path="url(#user-space)" y="-10%" x="-5%" />
+				</svg>
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">About Me</h1>
+				<hr class="titleseparator rounded">
+				<p>
+					My name is Harry Fotheringham, I have just completed my second year at the university of Leeds. I am
+					studying
+					Aeronautical and Aerospace Engineering (MEng). I am a highly motivated individual, with a great
+					interest
+					in
+					mechanical design and manufacture and am very keen to take opportunities that will allow me to bring
+					my
+					ideas to
+					the industry. Enabling me to expand my
+					knowledge and my interests, this year as you my have guessed from my picture I am undertaking a
+					industrial
+					placement year at DriveWorks Ltd.
+				</p>
+			</div>
+		</div>
+		<div class="curve"></div>
+	</section>
+
+
+
+	<section>
+		<div class="sectiontitle">
+			<h2>Skills</h2>
+		</div>
+		<img src="/UI/htmlskills.png" alt="HTML Logo" class="skills">
+		<img src="/UI/SQL.png" alt="HTML Logo" class="skills">
+
+
+	</section>
+
+	<hr class="pageseparator">
+	<section>
+		<div class="sectiontitle">
+			<h2>Hobbies</h2>
+		</div>
+		<p>Many things
+			Badminton
+			Football
+			Hockey
+			Clay Pigeon Shooting
+			3D printing
+
+		</p>
+	</section>
+
+	<hr class="pageseparator">
+	<section>
+		<div class="sectiontitle">
+			<h2>Interests</h2>
+		</div>
+		<p>Many more things
+			Sports
+			Physics
+			Animals
+		</p>
+	</section>
+
+	<div class="footer">
+		<p>Get in contact here: fotheringhamh16@gmail.com</p>
+		<a href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/" target="_blank"><img src="../UI/linkedin40x40.png"></a>
+		<p class="mycode">Coded by Me!!</p>
+	</div>
 </body>
+
+</html>
