@@ -59,19 +59,19 @@ header {
 }
 
 hr.pageseparator {
-    background-color: var(--border-color);
+    background-color: var(--yellow);
     width: 60%;
-    border-top: 5px solid var(--border-color);
+    border: 5px solid var(--yellow);
     border-radius: 5px;
     margin: 1% auto;
 }
 
 hr.titleseparator{
-    background-color: var(--border-color);
+    background-color: var(--background-color);
     width: 60%;
-    border-top: 5px solid var(--border-color);
     border-radius: 5px;
-    margin: 1% 0%;    
+    border: 5px solid var(--yellow);
+    margin: 1% 0%;
 }
 
 #portrait {
@@ -98,7 +98,7 @@ nav {
 }
 
 body {
-    background-color: var(--blue);
+    background: linear-gradient(180deg, var(--blue) 50%, var(--background-color) 50%);
     color: var(--border-color);
     margin: 0%;
     padding: 0%;
@@ -131,6 +131,7 @@ section {
     text-align: left;
     display: inline-block;
     color: var(--green);
+    font-size: x-large;
 }
 
 .imagebox{
@@ -143,12 +144,6 @@ section {
 
 .center {
     text-align: center;
-}
-
-.skills {
-    height: 10vh;
-    width: auto;
-    padding: auto 4%;
 }
 
 .projectImage {
@@ -199,6 +194,49 @@ section {
     z-index: -1;
 }
 
+.topcurve1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    background: var(--blue);
+    width: 100%;
+    margin: 0;
+    margin-bottom:150px;
+}
+
+.curve1 {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: var(--background-color);
+}
+
+.curve1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--blue);
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
 .footer {
     background-color: var(--green);
     height: 50px;
@@ -223,4 +261,12 @@ section {
     color: var(--yellow);
     font-size: large;
     padding-left: 25%;
+}
+
+.skills-imgs {
+    display: flex;
+}
+
+.skills-img {
+    padding: 1%;
 }
