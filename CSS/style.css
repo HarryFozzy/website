@@ -24,6 +24,22 @@
     --font: 'Fredoka One', cursive;
   }
 
+.red {
+    color: var(--red);
+}
+.blue {
+    color: var(--blue);
+}
+.yellow {
+    color: var(--yellow);
+}
+.green {
+    color: var(--green);
+}
+.orange {
+    color: var(--orange);
+}
+
   * {
     /*border: 1px solid black;
     border-width: 1px;*/
@@ -98,7 +114,7 @@ nav {
 }
 
 body {
-    background: linear-gradient(180deg, var(--blue) 50%, var(--background-color) 50%);
+    background-color: var(--background-color);
     color: var(--border-color);
     margin: 0%;
     padding: 0%;
@@ -108,7 +124,8 @@ body {
 .sectiontitle {
     text-align: center;
     font-size: xx-large;
-    color: var(--title-color);
+    color: var(--green);
+    margin-bottom: 30px;
 }
 
 section {
@@ -264,9 +281,48 @@ section {
 }
 
 .skills-imgs {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0 80px;
 }
 
 .skills-img {
-    padding: 1%;
+    width:128px;
+    border-radius: 5px;
+    margin: 2% auto;
+    display: inline-block;
+}
+
+.skill-holder {
+    position: relative;
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+.skill-holder:hover .skill-overlay {
+    opacity: 0.9;
+}
+
+.skill-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--background-color);
+}
+
+.skill-overlay p {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }

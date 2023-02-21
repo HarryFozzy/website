@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #FFFFFF; /* try #212121 also for dark mode */
+  --background-color: #fcf3e4;
+  --border-color: #E5E5E5;
+  --title-color: #e40001;
+  --tertiary-color: #14213D;
+  --header-color: #edf2f4;
+  --red: #e40001;
+  --blue: #9ac8c8;
+  --yellow: #fbc117;
+  --green: #005a5a;
+  --orange: #fb5e01;
+  --font: 'Fredoka One', cursive;
+}
+
+#PastEdu {
+  display: flex;
+}
+
+.cardholder {
+  width: 100%;
+  display: flex;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 var(--primary-color);
+    transition: 0.3s;
+    width:25%;
+    border-radius: 5px;
+    background-color: var(--title-color);
+    text-align: center;
+    margin: 2% auto;
+    display: inline-block;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 var(--border-color);
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .noBullet {
+    list-style: none; 
+}
+
+.Subjects {
+    padding-left: 5%;
+    text-align: left;
+    margin-right: 15%;
+}
+
+.UniResults {
+    text-align: right;
+}
+
+.SecondarySchool {
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.College {
+    display: flex;
+    margin-left: 25%;
+    align-items: center;
+}
+
+
+.results-container {
+  padding: 2px 16px;
+  position: relative;
+  width: 400px;
+  background-color: var(--red);
+  text-align: center;
+  height: 400px;
+  border-radius: 5%;
+}
+
+.results-container h2{
+  color: var(--yellow);
+
+}
+
+.results-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--yellow);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 5%;
+}
+
+.results-container:hover .results-overlay {
+  width: 100%;
+}
+
+.results-text {
+  white-space: nowrap; 
+  color: var(--red);
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

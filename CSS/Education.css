@@ -50,17 +50,17 @@ td {
     display: inline-block;
 }
 /*Exam results*/
-.Result h3 {
+.UniResult h3 {
     color: var(--title-color);
     text-align: center;
 }
 
-.Result h2 {
+.UniResult h2 {
     color: var(--title-color);
     text-align: center;
 }
 
-.Result li {
+.UniResult li {
     text-align: center;
     list-style: none;
 }
@@ -70,7 +70,7 @@ td {
     list-style: none;
 }
 
-.Result {
+.UniResult {
     text-align: center;
 }
 
