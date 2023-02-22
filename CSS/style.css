@@ -9,20 +9,20 @@
     --font: sans-serif;
   } */
 
-  :root {
-    --primary-color: #FFFFFF; /* try #212121 also for dark mode */
-    --background-color: #fcf3e4;
-    --border-color: #E5E5E5;
-    --title-color: #e40001;
-    --tertiary-color: #14213D;
-    --header-color: #edf2f4;
-    --red: #e40001;
-    --blue: #9ac8c8;
-    --yellow: #fbc117;
-    --green: #005a5a;
-    --orange: #fb5e01;
-    --font: 'Fredoka One', cursive;
-  }
+:root {
+  --primary-color: #FFFFFF; /* try #212121 also for dark mode */
+  --background-color: #fcf3e4;
+  --border-color: #E5E5E5;
+  --title-color: #e40001;
+  --tertiary-color: #14213D;
+  --header-color: #edf2f4;
+  --red: #e40001;
+  --blue: #9ac8c8;
+  --yellow: #fbc117;
+  --green: #005a5a;
+  --orange: #fb5e01;
+  --font: 'Fredoka One', cursive;
+}
 
 .background-color {
     color: var(--background-color);

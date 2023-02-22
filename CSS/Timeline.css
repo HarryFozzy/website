@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #FFFFFF; /* try #212121 also for dark mode */
+  --primary-color: var(--background-color); /* try #212121 also for dark mode */
   --background-color: #fcf3e4;
   --border-color: #E5E5E5;
   --title-color: #e40001;
@@ -13,112 +13,235 @@
   --font: 'Fredoka One', cursive;
 }
 
-.line {
-    background: var(--tertiary-color);
-    margin: 20px auto;
-    padding: 20px;
-}
-
 * {
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-
-/* tile container */
-.tile {
-    position: relative;
-    max-width: 80%;
-  }
-  
-  /* setting padding based on even or odd */
-  .tile:nth-child(odd) {
-    padding: 30px 0 30px 30px;
-  }
-  .tile:nth-child(even) {
-    padding: 30px 30px 30px 0;
-  }
-  /* Global ::before */
-  .tile::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    border: solid var(--title-color);
-  }
-  
-  /* Setting the border of top, bottom, left */
-  .tile:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 5px 0 5px 5px;
-    border-radius: 50px 0 0 50px;
-  }
-  
-  /* Setting the border of top, bottom, right */
-  .tile:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0 50px 50px 0;
-  }
-  
-  /* Removing the border if it is the first tile */
-  .tile:first-child::before {
-    border-top: 0;
-    border-top-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last tile  and it's odd */
-  .tile:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last tile  and it's even */
-  .tile:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  /* detailsrmation about the timeline */
-  .details {
-    display: flex;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  background: var(--blue);
+  font-family: "Open Sans", sans-serif;;
+  color: var(--blue);
+}
+h2 {
+  margin: 5%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: relative;
+}
+.timeline__event {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 6px;
+  align-self: center;
+  width: 50vw;
+}
+.timeline__event:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+.timeline__event:nth-child(2n + 1) .timeline__event__date {
+  border-radius: 0 6px 6px 0;
+}
+.timeline__event:nth-child(2n + 1) .timeline__event__content {
+  border-radius: 6px 0 0 6px;
+}
+.timeline__event:nth-child(2n + 1) .timeline__event__icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--red);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  right: auto;
+  z-index: -1;
+  transform: translateX(-50%);
+  animation: fillTop 2s forwards 4s ease-in-out;
+}
+.timeline__event:nth-child(2n + 1) .timeline__event__icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--red);
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 50%;
+  left: auto;
+  transform: translateY(-50%);
+  animation: fillLeft 2s forwards 4s ease-in-out;
+}
+.timeline__event__title {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: 1.5px;
+}
+.timeline__event__content {
+  padding: 20px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  background: var(--background-color);
+  width: calc(40vw - 84px);
+  border-radius: 0 6px 6px 0;
+}
+.timeline__event__date {
+  color: var(--background-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 20px;
+  border-radius: 6px 0 0 6px;
+}
+.timeline__event__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  padding: 20px;
+  align-self: center;
+  margin: 0 20px;
+  background: var(--red);
+  border-radius: 100%;
+  width: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  padding: 40px;
+  height: 40px;
+  position: relative;
+}
+.timeline__event__icon i {
+  font-size: 32px;
+}
+.timeline__event__icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--red);
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fillTop 2s forwards 4s ease-in-out;
+}
+.timeline__event__icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--red);
+  position: absolute;
+  left: 0%;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: fillLeftOdd 2s forwards 4s ease-in-out;
+}
+.timeline__event__description {
+  flex-basis: 60%;
+}
+.timeline__event--type2:after {
+  background: var(--yellow);
+}
+.timeline__event--type2 .timeline__event__date {
+  color: var(--background-color);
+  background: var(--yellow);
+}
+.timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before, .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:after {
+  background: var(--yellow);
+}
+.timeline__event--type2 .timeline__event__icon {
+  background: var(--yellow);
+  color: var(--background-color);
+}
+.timeline__event--type2 .timeline__event__icon:before, .timeline__event--type2 .timeline__event__icon:after {
+  background: var(--yellow);
+}
+.timeline__event--type2 .timeline__event__title {
+  color: var(--yellow);
+}
+.timeline__event--type3:after {
+  background: var(--green);
+}
+.timeline__event--type3 .timeline__event__date {
+  color: var(--background-color);
+  background-color: var(--green);
+}
+.timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:before, .timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:after {
+  background: var(--green);
+}
+.timeline__event--type3 .timeline__event__icon {
+  background: var(--green);
+  color: var(--green);
+}
+.timeline__event--type3 .timeline__event__icon:before, .timeline__event--type3 .timeline__event__icon:after {
+  background: var(--green);
+}
+.timeline__event--type3 .timeline__event__title {
+  color: var(--green);
+}
+.timeline__event:last-child .timeline__event__icon:before {
+  content: none;
+}
+@media (max-width: 786px) {
+  .timeline__event {
     flex-direction: column;
-    background-color: #333;
-    color: var(--primary-color);
-    border-radius: 10px;
-    padding: 10px;
-  }
-  
-  /* Title of the tile */
-  .title {
-    color: var(--title-color);
-    position: relative;
-  }
-  
-  /* Timeline dot  */
-  .title::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 999px;
-    border: 3px solid var(--title-color);
-  }
-  
-  /* text right if the tile is even  */
-  .tile:nth-child(even) > .details > .title {
-    text-align: right;
-  }
-  
-  /* setting dot to the left if the tile is odd */
-  .tile:nth-child(odd) > .details > .title::before {
-    left: -350%
-  }
-  
-  /* setting dot to the right if the tile is odd */
-  .tile:nth-child(even) > .details > .title::before {
-    right: -350%;
-  }  
+    align-self: center;
+ }
+  .timeline__event__content {
+    width: 100%;
+ }
+  .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+ }
+  .timeline__event__icon:before, .timeline__event__icon:after {
+    display: none;
+ }
+  .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+ }
+  .timeline__event:nth-child(2n + 1) {
+    flex-direction: column;
+    align-self: center;
+ }
+  .timeline__event:nth-child(2n + 1) .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+ }
+  .timeline__event:nth-child(2n + 1) .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+ }
+}
+@keyframes fillLeft {
+  100% {
+    right: 100%;
+ }
+}
+@keyframes fillTop {
+  100% {
+    top: 100%;
+ }
+}
+@keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+ }
+}
