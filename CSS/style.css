@@ -167,6 +167,8 @@ section {
     display: inline-block;
     color: var(--green);
     font-size: x-large;
+    background-color: transparent;
+    z-index: 10;
 }
 
 .imagebox{
