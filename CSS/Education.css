@@ -13,31 +13,6 @@
     --font: 'Fredoka One', cursive;
   }
 
-
-#unitable {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table, th, td {
-    border:1px solid rgb(150, 146, 146);
-}
-
-th {
-    font-size: x-large;
-}
-
-td {
-    font-size: large;
-}
-
-.tableheader {
-    color: var(--title-color);
-    text-align: center;
-    list-style: none;
-}
-
 #ModuleGrade {
     font-size: larger;
 }
@@ -65,11 +40,6 @@ td {
     list-style: none;
 }
 
-.tableheader {
-    text-align: center;
-    list-style: none;
-}
-
 .UniResult {
     text-align: center;
 }
@@ -85,6 +55,75 @@ td {
 .EduParagraph {
     width:50%;
     margin: auto;
+    color: var(--blue);
 }
 
+/*Table*/
+.tableheader {
+    text-align: center;
+    list-style: none;
+}
 
+#unitable {
+    text-align: center;
+    color: var(--background-color);
+    padding: 0 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+th, td {
+    border:1px solid var(--yellow);
+    background-color: var(--yellow);
+}
+
+th {
+    font-size: x-large;
+}
+
+td {
+    font-size: large;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tableheader {
+    color: var(--title-color);
+    text-align: center;
+    list-style: none;
+}
+
+/*Accordian*/
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion {
+    background-color: var(--green);
+    color: var(--background-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 30px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: var(--red);
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    background-color: var(--background-color);
+    display: none;
+    overflow: hidden;
+    width: 100%;
+  } 
+
+  .accordian-container {
+    width: 60%;
+    margin: auto;
+  }

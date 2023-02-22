@@ -24,25 +24,41 @@
     --font: 'Fredoka One', cursive;
   }
 
-.red {
+.background-color {
+    color: var(--background-color);
+}
+  .red {
     color: var(--red);
+}
+.red-background {
+    background-color: var(--red);
 }
 .blue {
     color: var(--blue);
 }
+.blue-background {
+    background-color: var(--blue);
+}
 .yellow {
     color: var(--yellow);
+}
+.yellow-background {
+    background-color: var(--yellow);
 }
 .green {
     color: var(--green);
 }
+.green-background {
+    background-color: var(--green);
+}
 .orange {
     color: var(--orange);
 }
+.orange-background {
+    background-color: var(--orange);
+}
 
   * {
-    /*border: 1px solid black;
-    border-width: 1px;*/
     font-family: var(--font);
     box-sizing: border-box;
     margin: 0;

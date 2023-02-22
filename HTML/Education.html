@@ -6,106 +6,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../CSS/Education.css" rel="stylesheet">
-	<link href="../CSS/style.css" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet">
     <link href="../CSS/nav.css" rel="stylesheet">
     <link href="../CSS/results-card.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <title>Harry's Education</title>
 </head>
 
 <header>
-	<h1 class="fullname">Harry Fotheringham</h1>
+    <h1 class="fullname">Harry Fotheringham</h1>
 </header>
 
 <body>
-	<section class="home">
-		<div class="open-overlay">
-			<span class="bar-top"></span>
-			<span class="bar-middle"></span>
-			<span class="bar-bottom"></span>
-		</div>
-	</section>
-	<div class="overlay-navigation">
-		<nav role="navigation">
-			<ul>
-				<li><a href="../index.html" data-content="About me">Home</a></li>
-				<li><a href="Education.html" data-content="Curious?">Education</a></li>
-				<li><a href="Experience.html" data-content="I got game">Experience</a></li>
-				<li><a href="Projects.html" data-content="Some of my finest work">Projects</a></li>
-				<li><a href="test.html" data-content="Testing 1..2..3..">Test</a></li>
-			</ul>
-		</nav>
-	</div>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src="../JS/nav.js"></script>
+    <section class="home">
+        <div class="open-overlay">
+            <span class="bar-top"></span>
+            <span class="bar-middle"></span>
+            <span class="bar-bottom"></span>
+        </div>
+    </section>
+    <div class="overlay-navigation">
+        <nav role="navigation">
+            <ul>
+                <li><a href="../index.html" data-content="About me">Home</a></li>
+                <li><a href="Education.html" data-content="Curious?">Education</a></li>
+                <li><a href="Experience.html" data-content="I got game">Experience</a></li>
+                <li><a href="Projects.html" data-content="Some of my finest work">Projects</a></li>
+                <li><a href="test.html" data-content="Testing 1..2..3..">Test</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="../JS/nav.js"></script>
 
-    <div class="UniResult">
-        
-        <br>
-        <hr class="pageseparator">
-        <div class="sectiontitle">
-            <h2>University Results</h2>
-        </div>
-        <div class="EduParagraph">
-            <p>Below are all of the modules that I have studied so far at university, where I am currently working a 1st
-                Class Level. This year I have a year in industry at DriveWorks Ltd. They are a software development
-                company that produce the worlds leading software in CAD automation. They are integrated with SOLIDWORKS
-                which has been a wide part of my time at university. </p>
-        </div>
-        <br>
-        <div>
+
+    <br>
+    <div class="sectiontitle">
+        <h2>University Results</h2>
+    </div>
+    <div class="EduParagraph">
+        <p>Below are all of the modules that I have studied so far at university, where I am currently working a 1st
+            Class Level. This year I have a year in industry at DriveWorks Ltd. They are a software development
+            company that produce the worlds leading software in CAD automation. They are integrated with SOLIDWORKS
+            which has been a wide part of my time at university. </p>
+    </div>
+    <br>
+    <div class="accordian-container">
+        <button class="accordion">Year 1 2020-2021</button>
+        <div class="panel">
             <table id="unitable">
                 <tr class="tableheader">
-                    <th colspan="2" class="tableheader">University Year 1 (2020/2021)</th>
-                    <th colspan="2" class="tableheader">University Year 2 (2021/2022)</th>
-                </tr>
-                <tr id="ModuleGrade">
-                    <td>Module</td>
-                    <td>Grade</td>
                     <td>Module</td>
                     <td>Grade</td>
                 </tr>
                 <tr>
                     <td>Engineering Mathematics</td>
                     <td>86%</td>
-                    <td>Engineering Mechanics</td>
-                    <td>82%</td>
                 </tr>
                 <tr>
                     <td>Design and Manufacture 1</td>
                     <td>68%</td>
-                    <td>Design and Manufacture 2</td>
-                    <td>71%</td>
                 </tr>
                 <tr>
                     <td>Computers in Engineering Analysis</td>
                     <td>87%</td>
-                    <td>Vibration and Control</td>
-                    <td>64%</td>
                 </tr>
                 <tr>
                     <td>Engineering Materials</td>
                     <td>76%</td>
-                    <td>Mechatronics and Measurement Systems</td>
-                    <td>71%</td>
                 </tr>
                 <tr>
                     <td>Solid Mechanics</td>
                     <td>86%</td>
-                    <td>Economics and Management</td>
-                    <td>71%</td>
                 </tr>
                 <tr>
                     <td>ThermoFluids 1</td>
                     <td>71%</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="accordion">Year 2 2021-2022</button>
+        <div class="panel">
+            <table id="unitable">
+                <tr class="tableheader">
+                    <td>Module</td>
+                    <td>Grade</td>
+                </tr>
+                <tr>
+                    <td>Engineering Mechanics</td>
+                    <td>82%</td>
+                </tr>
+                <tr>
+                    <td>Design and Manufacture 2</td>
+                    <td>71%</td>
+                </tr>
+                <tr>
+                    <td>Vibration and Control</td>
+                    <td>64%</td>
+                </tr>
+                <tr>
+                    <td>Mechatronics and Measurement Systems</td>
+                    <td>71%</td>
+                </tr>
+                <tr>
+                    <td>Economics and Management</td>
+                    <td>71%</td>
+                </tr>
+                <tr>
                     <td>Thermofluids 2</td>
                     <td>69%</td>
                 </tr>
             </table>
         </div>
+
+        <button class="accordion">Year 3 2022-2023</button>
+        <div class="panel">
+            <table id="unitable">
+                <tr class="tableheader">
+                    <td>Placement Year</td>
+                    <td>Pass</td>
+                </tr>
+            </table>
+        </div>
     </div>
+    <script src="../JS/Accordian.js"></script>
 
 
     <br>
@@ -113,141 +141,112 @@
     <hr class="pageseparator">
     <div class="sectiontitle">
         <h2><b>A-Levels</b></h2>
-      </div>
-      <div class="results-alevel">
-        <div class="results-container">
-          <h2 class="results-text"><b>Maths</b></h2>
-          <div class="results-overlay">
+    </div>
+    <div class="results-alevel">
+        <div class="results-container red-background">
             <div class="results-text">
-              <p>A*</p>
+                <h2><b class="yellow">A*</b></h2>
+                <p>Maths</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Biology</b></h2>
-          <div class="results-overlay">
+        <div class="results-container blue-background">
             <div class="results-text">
-              <p>A*</p>
+                <h2><b class="green">A*</b></h2>
+                <p>Biology</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Chemistry</b></h2>
-          <div class="results-overlay">
+        <div class="results-container yellow-background">
             <div class="results-text">
-              <p>A*</p>
+                <h2><b class="orange">A*</b></h2>
+                <p>Chemistry</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Physics</b></h2>
-          <div class="results-overlay">
+        <div class="results-container green-background">
             <div class="results-text">
-              <p>A*</p>
+                <h2><b class="blue">A*</b></h2>
+                <p>Physics</p>
             </div>
-          </div>
         </div>
-      </div>
-    
-      <div class="sectiontitle">
+    </div>
+
+    <div class="sectiontitle">
         <h2><b>GCSEs</b></h2>
-      </div>
-      <div class="results-alevel">
-        <div class="results-container">
-          <h2 class="results-text"><b>Maths</b></h2>
-          <div class="results-overlay">
+    </div>
+    <div class="results-alevel">
+        <div class="results-container blue-background">
             <div class="results-text">
-              <p>9</p>
+                <h2><b class="orange">9</b></h2>
+                <p>Maths</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Biology</b></h2>
-          <div class="results-overlay">
+        <div class="results-container orange-background">
             <div class="results-text">
-              <p>9</p>
+                <h2><b class="yellow">9</b></h2>
+                <p>Biology</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Chemistry</b></h2>
-          <div class="results-overlay">
+        <div class="results-container yellow-background">
             <div class="results-text">
-              <p>8</p>
+                <h2><b class="red">8</b></h2>
+                <p>Chemistry</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Physics</b></h2>
-          <div class="results-overlay">
+        <div class="results-container red-background">
             <div class="results-text">
-              <p>9</p>
+                <h2><b class="green">9</b></h2>
+                <p>Physics</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Computer Science</b></h2>
-          <div class="results-overlay">
+        <div class="results-container green-background">
             <div class="results-text">
-              <p>8</p>
+                <h2><b class="blue">8</b></h2>
+                <p>Computer Science</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>English Literature</b></h2>
-          <div class="results-overlay">
+        <div class="results-container blue-background">
             <div class="results-text">
-              <p>8</p>
+                <h2><b class="orange">A*</b></h2>
+                <p>Product Design with Electronics</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>English Language</b></h2>
-          <div class="results-overlay">
+        <div class="results-container orange-background">
             <div class="results-text">
-              <p>7</p>
+                <h2><b class="yellow">8</b></h2>
+                <p>English Literature</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Physical Education</b></h2>
-          <div class="results-overlay">
+        <div class="results-container yellow-background">
             <div class="results-text">
-              <p>9</p>
+                <h2><b class="red">7</b></h2>
+                <p>English Language</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Product Design with Electronics</b></h2>
-          <div class="results-overlay">
+        <div class="results-container red-background">
             <div class="results-text">
-              <p>A*</p>
+                <h2><b class="green">6</b></h2>
+                <p>French</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>French</b></h2>
-          <div class="results-overlay">
+        <div class="results-container green-background">
             <div class="results-text">
-              <p>6</p>
+                <h2><b class="blue">9</b></h2>
+                <p>Geography</p>
             </div>
-          </div>
         </div>
-        <div class="results-container">
-          <h2 class="results-text"><b>Geography</b></h2>
-          <div class="results-overlay">
+        <div class="results-container blue-background">
             <div class="results-text">
-              <p>9</p>
+                <h2><b class="orange">9</b></h2>
+                <p>PE</p>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <div class="footer">
-		<p>Get in contact here: fotheringhamh16@gmail.com</p>
-		<a href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/" target="_blank"><img src="../UI/linkedin40x40.png"></a>
-		<p class="mycode">Coded by Me!!</p>
-	</div>
+        <p>Get in contact here: fotheringhamh16@gmail.com</p>
+        <a href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/" target="_blank"><img
+                src="../UI/linkedin40x40.png"></a>
+        <p class="mycode">Coded by Me!!</p>
+    </div>
 
 </body>
 

@@ -15,7 +15,7 @@
 
 .results-alevel{
   display: flex;
-  padding: auto;
+  padding-bottom: 50px;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +26,6 @@
   padding: 2px 16px;
   position: relative;
   width: 150px;
-  background-color: var(--red);
   text-align: center;
   height: 150px;
   border-radius: 10%;
@@ -36,7 +35,7 @@
 
 .results-container h2{
   color: var(--yellow);
-
+  font-size: 80px;
 }
 
 .results-overlay {
@@ -58,13 +57,13 @@
 
 .results-text {
   white-space: nowrap; 
-  color: var(--red);
-  font-size: 20px;
   position: absolute;
   overflow: hidden;
+  font-size: 25px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: 100%;
+  text-align: center;
 }
