@@ -13,27 +13,19 @@
   --font: 'Fredoka One', cursive;
 }
 
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 14px;
-}
 body {
-  background: var(--blue);
   font-family: "Open Sans", sans-serif;;
   color: var(--blue);
 }
 h2 {
   margin: 5%;
   text-align: center;
-  font-size: 2rem;
   font-weight: 100;
 }
 .timeline {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: auto;
   position: relative;
 }
 .timeline__event {
@@ -193,6 +185,27 @@ h2 {
 .timeline__event--type3 .timeline__event__title {
   color: var(--green);
 }
+.timeline__event--type4:after {
+  background: var(--orange);
+}
+.timeline__event--type4 .timeline__event__date {
+  color: var(--background-color);
+  background-color: var(--orange);
+}
+.timeline__event--type4:nth-child(2n + 1) .timeline__event__icon:before, .timeline__event--type4:nth-child(2n + 1) .timeline__event__icon:after {
+  background: var(--orange);
+}
+.timeline__event--type4 .timeline__event__icon {
+  background: var(--orange);
+  color: var(--orange);
+}
+.timeline__event--type4 .timeline__event__icon:before, .timeline__event--type4 .timeline__event__icon:after {
+  background: var(--orange);
+}
+.timeline__event--type4 .timeline__event__title {
+  color: var(--orange);
+}
+
 .timeline__event:last-child .timeline__event__icon:before {
   content: none;
 }

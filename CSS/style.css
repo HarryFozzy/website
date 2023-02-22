@@ -141,12 +141,14 @@ body {
     text-align: center;
     font-size: xx-large;
     color: var(--green);
-    margin-bottom: 30px;
 }
 
 section {
-    text-align: center;
     margin: auto 20% ;
+}
+
+.skills-section {
+    text-align: center;
 }
 
 .box {
@@ -231,7 +233,6 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 400px;
     background: var(--blue);
     width: 100%;
