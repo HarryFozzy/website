@@ -8,16 +8,16 @@
 	<link href="../CSS/style.css" rel="stylesheet">
 	<link href="../CSS/nav.css" rel="stylesheet">
 	<link href="../CSS/Timeline.css" rel="stylesheet">
+	<link href="../CSS/Submit-button.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
 	<title>Harry's Website</title>
 </head>
 
 <style>
 	body {
-		background: linear-gradient(180deg, var(--blue) 50%, var(--background-color) 50%);
+		background: linear-gradient(180deg, var(--blue) 30%, var(--background-color) 0%);
 	}
 </style>
 
@@ -44,13 +44,13 @@
 		</nav>
 	</div>
 
-
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="../JS/nav.js"></script>
-	<section class="topcurve">
+
+	<section id="intro" class="topcurve">
 
 		<div class="box">
-			<div class="imagebox" style="z-index:1">
+			<div class="imagebox" style="z-index: 1;">
 				<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 					<defs>
 						<clipPath id="user-space" clipPathUnits="userSpaceOnUse">
@@ -64,7 +64,7 @@
 						xlink:href="/UI/ME-Cropped.jpg" clip-path="url(#user-space)" y="-10%" x="-5%" />
 				</svg>
 			</div>
-			<div class="textbox">
+			<div class="textbox" style="z-index: 1;">
 				<h1 class="pagetitle">About Me</h1>
 				<hr class="titleseparator rounded">
 				<p>
@@ -86,159 +86,181 @@
 		<div class="curve"></div>
 	</section>
 
-	<section class="topcurve1">
+	<section id="timeline" class="topcurve1">
 		<div class="sectiontitle">
 			<h2 style="color: #fbc117; margin: 5px;">My Timeline</h2>
 		</div>
 		<div class="curve1"></div>
 
-		<div class="timeline"> 
-			<!--Copy from here-->
-			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-			  <div class="timeline__event__icon ">
-				<i class="lni-cake"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				03-10-2001
-			  </div>
-			  <div class="timeline__event__content ">
-				<div class="timeline__event__title">
-				  Birthday
+		<div class="timeline">
+			<div class="timeline__event animated fadeInUp delay-2s timeline__event--type4">
+				<div class="timeline__event__icon">
+					<i class="lni-burger"></i>
+
 				</div>
-				<div class="timeline__event__description">
-				  <p>I was born</p>
+				<div class="timeline__event__date">
+					04-07-2022
 				</div>
-			  </div>
-			</div>
-			<!--To here-->
-			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
-			  <div class="timeline__event__icon ">
-				<i class="lni-cake"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				2013-2018
-			  </div>
-			  <div class="timeline__event__content ">
-				<div class="timeline__event__title">
-				  Secondary School
+				<div class="timeline__event__content">
+					<div class="timeline__event__title">
+						DriveWorks Ltd
+					</div>
+					<div class="timeline__event__description">
+						<p>This year I am undertaking a years work experience as part of my university degree at
+							DriveWorks Ltd</p>
+					</div>
 				</div>
-				<div class="timeline__event__description">
-				  <p>I attended The Hayfield School in Doncaster. To find out more please visit my <a href="../HTML/Education.html">Education Page</a></p>
-				</div>
-			  </div>
-			</div>
-			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type3">
-			  <div class="timeline__event__icon ">
-				<i class="lni-cake"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				2018-Now
-			  </div>
-			  <div class="timeline__event__content ">
-				<div class="timeline__event__title">
-				  Cricket Coaching
-				</div>
-				<div class="timeline__event__description">
-				  <p>Over summer I undertook a role as a leader of a Sports camp and All Stars cricket at my local cricket club</p>
-				</div>
-			  </div>
-			</div>
-			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type4">
-			  <div class="timeline__event__icon ">
-				<i class="lni-cake"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				2018-2020
-			  </div>
-			  <div class="timeline__event__content ">
-				<div class="timeline__event__title">
-				  College
-				</div>
-				<div class="timeline__event__description">
-				  <p>For my college years I was the second ever year to attended New College Doncaster and you can find out more about my time there on my <a href="../HTML/Education.html">Education Page</a></p>
-				</div>
-			  </div>
-			</div>
-			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-			  <div class="timeline__event__icon ">
-				<i class="lni-cake"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				2019-2022
-			  </div>
-			  <div class="timeline__event__content ">
-				<div class="timeline__event__title">
-				  Lifeguarding
-				</div>
-				<div class="timeline__event__description">
-				  <p>I got a job at a local leisure center working as a Lifeguard.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
-			  <div class="timeline__event__icon">
-				<i class="lni-slim"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				05-07-2019
-			  </div>
-			  <div class="timeline__event__content">
-				<div class="timeline__event__title">
-				  Tata Steel
-				</div>
-				<div class="timeline__event__description">
-				  <p>For a week in July I get a placement at TATA Steel in the Netherlands. I flew over to Amsterdam and stayed with relatives I had never met before and had a week of work experience at the company. I got to see and do many exciting things in just a short space of time. If you would like to learn more about this experience <a href="Experience.html">Click Here</a></p>
-				</div>
-		  
-			  </div>
 			</div>
 			<div class="timeline__event animated fadeInUp timeline__event--type3">
-			  <div class="timeline__event__icon">
-				<i class="lni-cake"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				2022-Now
-			  </div>
-			  <div class="timeline__event__content">
-				<div class="timeline__event__title">
-				  University
+				<div class="timeline__event__icon">
+					<i class="lni-cake"></i>
+
 				</div>
-				<div class="timeline__event__description">
-				  <p>I started attending the University of Leeds in September of 2022 at the peak of COVID-19. You could say that my first year was less eventful than I had hoped. If you would like to take a look at some of my projects while at university please visit my <a href="Projects.html">Projects Page.</a> You can also find out about all of the modules that I have taken <a href="Education.html">here</a></p>
+				<div class="timeline__event__date">
+					2022-Now
 				</div>
-			  </div>
+				<div class="timeline__event__content">
+					<div class="timeline__event__title">
+						University
+					</div>
+					<div class="timeline__event__description">
+						<p>I started attending the University of Leeds in September of 2022 at the peak of COVID-19. You
+							could say that my first year was less eventful than I had hoped. If you would like to take a
+							look at some of my projects while at university please visit my <a
+								href="Projects.html">Projects Page.</a> You can also find out about all of the modules
+							that I have taken <a href="Education.html">here</a></p>
+					</div>
+				</div>
 			</div>
-			<div class="timeline__event animated fadeInUp delay-2s timeline__event--type4">
-			  <div class="timeline__event__icon">
-				<i class="lni-burger"></i>
-		  
-			  </div>
-			  <div class="timeline__event__date">
-				04-07-2022
-			  </div>
-			  <div class="timeline__event__content">
-				<div class="timeline__event__title">
-				  DriveWorks Ltd
+			<div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
+				<div class="timeline__event__icon">
+					<i class="lni-slim"></i>
+
 				</div>
-				<div class="timeline__event__description">
-				  <p>This year I am undertaking a years work experience as part of my university degree at DriveWorks Ltd</p>
+				<div class="timeline__event__date">
+					05-07-2019
 				</div>
-			  </div>
+				<div class="timeline__event__content">
+					<div class="timeline__event__title">
+						Tata Steel
+					</div>
+					<div class="timeline__event__description">
+						<p>For a week in July I get a placement at TATA Steel in the Netherlands. I flew over to
+							Amsterdam and stayed with relatives I had never met before and had a week of work experience
+							at the company. I got to see and do many exciting things in just a short space of time. If
+							you would like to learn more about this experience <a href="Experience.html">Click Here</a>
+						</p>
+					</div>
+
+				</div>
 			</div>
-		  
-		  </div>
+			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+				<div class="timeline__event__icon ">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					2019-2022
+				</div>
+				<div class="timeline__event__content ">
+					<div class="timeline__event__title">
+						Lifeguarding
+					</div>
+					<div class="timeline__event__description">
+						<p>I got a job at a local leisure center working as a Lifeguard.</p>
+					</div>
+				</div>
+			</div>
+			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type4">
+				<div class="timeline__event__icon ">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					2018-2020
+				</div>
+				<div class="timeline__event__content ">
+					<div class="timeline__event__title">
+						College
+					</div>
+					<div class="timeline__event__description">
+						<p>For my college years I was the second ever year to attended New College Doncaster and you can
+							find out more about my time there on my <a href="../HTML/Education.html">Education Page</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type3">
+				<div class="timeline__event__icon ">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					2018-Now
+				</div>
+				<div class="timeline__event__content ">
+					<div class="timeline__event__title">
+						Cricket Coaching
+					</div>
+					<div class="timeline__event__description">
+						<p>Over summer I undertook a role as a leader of a Sports camp and All Stars cricket at my local
+							cricket club</p>
+					</div>
+				</div>
+			</div>
+			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
+				<div class="timeline__event__icon ">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					2013-2018
+				</div>
+				<div class="timeline__event__content ">
+					<div class="timeline__event__title">
+						Secondary School
+					</div>
+					<div class="timeline__event__description">
+						<p>I attended The Hayfield School in Doncaster. To find out more please visit my <a
+								href="../HTML/Education.html">Education Page</a></p>
+					</div>
+				</div>
+			</div>
+
+
+			<!--Copy from here-->
+			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+				<div class="timeline__event__icon ">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					03-10-2001
+				</div>
+				<div class="timeline__event__content ">
+					<div class="timeline__event__title">
+						Birthday
+					</div>
+					<div class="timeline__event__description">
+						<p>I was born</p>
+					</div>
+				</div>
+			</div>
+			<!--To here-->
+
+
+
+
+
+
+
+
+		</div>
 
 	</section>
 
 
-	<section class="skills-section">
+	<section id="skills" class="skills-section">
 		<div class="sectiontitle">
 			<h2>Skills</h2>
 		</div>
@@ -303,7 +325,6 @@
 					<p>Cura 3D Printing</p>
 				</div>
 			</div>
-
 			<div class="skill-holder green">
 				<img src="/UI/SW.png" alt="SW img" class="skills-img">
 				<div class="skill-overlay">
@@ -327,35 +348,127 @@
 	</section>
 
 	<hr class="pageseparator">
-	<section>
+	<section id="hobbies" class="hobbies">
 		<div class="sectiontitle">
-			<h2>Hobbies</h2>
+			<h2 id="Hobbies-Interests">Hobbies & Interests</h2>
 		</div>
-		<p>Many things
-			Badminton
-			Football
-			Hockey
-			Clay Pigeon Shooting
-			3D printing
-
-		</p>
+		<div class="box">
+			<div class="imagebox">
+				<img src="/UI/Sports-slightlySmaller.png" alt="Sports Images">
+				<div class="image-text background-color">
+					<p>Sports</p>
+				</div>
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">Sports</h1>
+				<hr class="titleseparator rounded">
+				<p>
+					I play ...
+				</p>
+			</div>
+		</div>
+		<div class="box">
+			<div class="textbox">
+				<h1 class="pagetitle">3D Printing</h1>
+				<hr class="titleseparator rounded">
+				<p>
+					This is a recent new hobbie of mine since I aquired a 3D printer for my Birthday last year.
+					Naturally this meant that everybody got 3D printed Christmas Presents.
+				</p>
+			</div>
+			<div class="imagebox">
+				<img src="/UI/3DPrinting.png" alt="Sports Images">
+				<div class="image-text green">
+					<p>3D Printing</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imagebox">
+				<img src="/UI/3DPrinting.png" alt="Sports Images">
+				<div class="image-text green">
+					<p>Physics</p>
+				</div>
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">Physics</h1>
+				<hr class="titleseparator rounded">
+				<p>
+					Physics tings
+				</p>
+			</div>
+		</div>
+		<div class="box">
+			<div class="textbox">
+				<h1 class="pagetitle">Animals</h1>
+				<hr class="titleseparator rounded">
+				<p>
+					At home I have many animals, including dogs, cats, horses, geece and chickens.
+				</p>
+			</div>
+			<div class="imagebox">
+				<img src="/UI/3DPrinting.png" alt="Sports Images">
+				<div class="image-text green">
+					<p>Animals</p>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<hr class="pageseparator">
-	<section>
+
+
+	<section id="contact" class="last-section">
 		<div class="sectiontitle">
-			<h2>Interests</h2>
+			<h2 id="GetInContact">Get in contact</h2>
+			<p>Contact Details <br>
+				Email: fotheringhamh16@gmail.com
+			</p>
 		</div>
-		<p>Many more things
-			Sports
-			Physics
-			Animals
-		</p>
+		<div class="form-container">
+			<form action="index.html#GetInContact" method="get">
+
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+					<option value="uk">UK</option>
+				</select>
+
+				<label for="job">Would you like to offer me a Job?</label>
+				<input id="job" name="job" type="checkbox">
+
+				<label for="subject">Comments</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+				<div id="submit-container">
+					<button class="learn-more submitted">
+						<span class="circle" aria-hidden="true">
+							<span class="icon arrow"></span>
+						</span>
+						<span class="button-text">Submit</span>
+					</button>
+				</div>
+
+			</form>
+			<div class="form-overlay" id="form-overlay">
+				<h1 class="feedback">Thank you for your feedback</h1>
+				<div class="close submitted">Close</div>
+			</div>
+		</div>
 	</section>
+
+	<script src="../JS/general.js"></script>
 
 	<div class="footer">
-		<p>Get in contact here: fotheringhamh16@gmail.com</p>
-		<a href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/" target="_blank"><img
+		<p>Get in contact <a href="index.html#GetInContact">here</a></p>
+		<a id="LinkedIn" href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/" target="_blank"><img
 				src="../UI/linkedin40x40.png"></a>
 		<p class="mycode">Coded by Me!!</p>
 	</div>

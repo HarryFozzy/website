@@ -143,8 +143,14 @@ body {
     color: var(--green);
 }
 
+.sectiontitle p {
+    font-size: 20px;
+    color: var(--blue);
+}
+
 section {
     margin: auto 20% ;
+    z-index: -2;
 }
 
 .skills-section {
@@ -157,7 +163,14 @@ section {
     padding: 1% auto;
     border: 2px solid var(--background-color);
     border-radius: 20px ;
-    display: flex
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hobbies {
+    width: 100%;
+    margin: auto;
 }
 
 .textbox {
@@ -168,15 +181,33 @@ section {
     color: var(--green);
     font-size: x-large;
     background-color: transparent;
-    z-index: 10;
 }
 
 .imagebox{
-    margin: 1%;
-    width: 40%;
-    height: 40%;
-    left: 0%;
+    position: relative;
+    width: 50%;
+}
+
+.imagebox img{
     display: inline-block;
+}
+
+.image-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.image-text p {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .center {
@@ -285,7 +316,7 @@ section {
     color: var(--background-color);
 }
 
-.footer a {
+.footer #LinkedIn {
     right: 5px;
     top: 5px;
     padding: 0;
@@ -296,7 +327,7 @@ section {
     position: relative;
     color: var(--yellow);
     font-size: large;
-    padding-left: 25%;
+    margin: auto;
 }
 
 .skills-imgs {
@@ -344,4 +375,100 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    font: var(--font);
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=checkbox] {
+    font: var(--font);
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    margin-right: 100%;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: var(--red);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: var(--yellow);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .form-container {
+    border-radius: 5px;
+    background-color: var(--background-color);
+    padding: 20px;
+    position: relative;
+    color: var(--yellow);
+  } 
+
+  .form-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: var(--blue);
+    border-radius: 50px;
+    text-align: center;
+    display: none;
+  }
+
+.feedback {
+    color: var(--orange);
+    margin: 5%;
+    font-size: 70px;
+}
+
+  .close {
+    margin: auto;
+    font-size: 50px;
+    padding: 30px;
+    color: var(--background-color);
+    background-color: var(--green);
+    border-radius: 10px;
+    width: 40%;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+  }
+
+.last-section {
+    padding-bottom: 100px;
+    margin-bottom: 50px ;
+}
+
+#country, #fname, #lname, #job, #subject, #submitted {
+    font: var(--font);
+    color: var(--blue);
 }
