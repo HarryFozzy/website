@@ -94,10 +94,42 @@ header {
     margin: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .fullname {
+      font-size: 30px;
+    }
+
+    .skill-holder {
+        max-height: 50px;
+    }
+    .skill-holder img {
+        height: 45px;
+        width: auto;
+    }
+    .skill-overlay p {
+        font-size: 10px;
+    }
+    .pagetitle h1 {
+        font-size: 25px;
+    }
+    .textbox p{
+        font-size: small;
+    }
+    .sectiontitle h2 {
+        font-size: 25px;
+    }
+    .box {
+        display: block !important;
+    }
+    .imagebox {
+        width: 100% !important;
+        height: auto !important;
+    }
+  }
+
 .pagetitle {
     font-size: 50px;
     margin: 1% auto;
-    padding: auto;
     color: var(--green);
 }
 
@@ -175,9 +207,6 @@ section {
 
 .box {
     margin: 2% 10%;
-    background-color: var(--background-color);
-    padding: 1% auto;
-    border: 2px solid var(--background-color);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -264,6 +293,7 @@ section {
     height: 100%;
     transform: translate(85%, 60%);
     background-color: var(--blue);
+    z-index: -1;
 }
 
 .curve::after {
@@ -383,10 +413,10 @@ section {
     opacity: 0;
     transition: .5s ease;
     background-color: var(--background-color);
+    font-size: 20px;
 }
 
 .skill-overlay p {
-    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
