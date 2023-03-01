@@ -1,3 +1,19 @@
+:root {
+  --primary-color: #FFFFFF;
+  /* try #212121 also for dark mode */
+  --background-color: #fcf3e4;
+  --border-color: #E5E5E5;
+  --title-color: #e40001;
+  --tertiary-color: #14213D;
+  --header-color: #edf2f4;
+  --red: #e40001;
+  --blue: #9ac8c8;
+  --yellow: #fbc117;
+  --green: #005a5a;
+  --orange: #fb5e01;
+  --font: 'Fredoka One', cursive;
+}
+
 .project_menu{
   width: 100%;
   margin: 0;
@@ -20,6 +36,7 @@
   margin: 10px;
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
 }
 .project_card:hover .project_card__caption {
   top: 50%;
@@ -38,6 +55,8 @@
   position: relative;
   max-height: 400px;
   overflow: hidden;
+  border-radius: 30px;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .project_card__thumb {
@@ -67,7 +86,7 @@
   top: 50%;
   z-index: 1;
   padding: 0 20px;
-  color: white;
+  color: var(--yellow);
   transform: translateY(-50%);
   text-align: center;
   transition: 0.3s;
@@ -82,10 +101,10 @@
   display: -webkit-box;
   max-height: 85px;
   overflow: hidden;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font);
   font-size: 23px;
-  line-height: 28px;
-  text-shadow: 0px 1px 5px black;
+  line-height: 30px;
+  text-shadow: 0px 1px 5px var(--red);
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -95,7 +114,7 @@
   max-height: 150px;
   margin: 20px 0;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font);
   font-size: 16px;
   line-height: 20px;
   text-overflow: ellipsis;
@@ -105,21 +124,22 @@
 }
 @media (min-width: 1024px) {
   .project_card__snippet {
-    margin: 60px 0;
+    margin: 80px 0;
  }
 }
 .project_card__button {
   display: inline-block;
   padding: 10px 20px;
-  color: white;
-  border: 1px solid white;
-  font-family: 'Roboto', sans-serif;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  font-family: var(--font);
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.3s;
+  border-radius: 8px;
 }
 .project_card__button:hover {
-  color: black;
-  background-color: white;
+  color: var(--green);
+  background-color: var(--orange);
 }

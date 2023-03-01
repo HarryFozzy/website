@@ -1,0 +1,15 @@
+Name,Instance,Parent,ParentInstance,Configuration,Level,Type
+Newtons Cradle NewtonsCradle 0248,1,,,Default,1,Assembly
+Sphere NewtonsCradle 0248,1,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Sphere NewtonsCradle 0248,5,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Sphere NewtonsCradle 0248,4,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Sphere NewtonsCradle 0248,2,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Hanging thing NewtonsCradle 0248,5,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Sphere NewtonsCradle 0248,3,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Base 200,97244732577,1,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+frame NewtonsCradle 0248,2,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Hanging thing NewtonsCradle 0248,1,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Hanging thing NewtonsCradle 0248,2,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Hanging thing NewtonsCradle 0248,3,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+frame NewtonsCradle 0248,1,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part
+Hanging thing NewtonsCradle 0248,4,Newtons Cradle NewtonsCradle 0248,1,Default,2,Part

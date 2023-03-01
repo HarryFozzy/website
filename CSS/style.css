@@ -10,55 +10,66 @@
   } */
 
 :root {
-  --primary-color: #FFFFFF; /* try #212121 also for dark mode */
-  --background-color: #fcf3e4;
-  --border-color: #E5E5E5;
-  --title-color: #e40001;
-  --tertiary-color: #14213D;
-  --header-color: #edf2f4;
-  --red: #e40001;
-  --blue: #9ac8c8;
-  --yellow: #fbc117;
-  --green: #005a5a;
-  --orange: #fb5e01;
-  --font: 'Fredoka One', cursive;
+    --primary-color: #FFFFFF;
+    /* try #212121 also for dark mode */
+    --background-color: #fcf3e4;
+    --border-color: #E5E5E5;
+    --title-color: #e40001;
+    --tertiary-color: #14213D;
+    --header-color: #edf2f4;
+    --red: #e40001;
+    --blue: #9ac8c8;
+    --yellow: #fbc117;
+    --green: #005a5a;
+    --orange: #fb5e01;
+    --font: 'Fredoka One', cursive;
 }
 
 .background-color {
     color: var(--background-color);
 }
-  .red {
+
+.red {
     color: var(--red);
 }
+
 .red-background {
     background-color: var(--red);
 }
+
 .blue {
     color: var(--blue);
 }
+
 .blue-background {
     background-color: var(--blue);
 }
+
 .yellow {
     color: var(--yellow);
 }
+
 .yellow-background {
     background-color: var(--yellow);
 }
+
 .green {
     color: var(--green);
 }
+
 .green-background {
     background-color: var(--green);
 }
+
 .orange {
     color: var(--orange);
 }
+
 .orange-background {
     background-color: var(--orange);
 }
 
-  * {
+* {
     font-family: var(--font);
     box-sizing: border-box;
     margin: 0;
@@ -83,7 +94,7 @@ header {
     margin: 1rem;
 }
 
-.pagetitle{
+.pagetitle {
     font-size: 50px;
     margin: 1% auto;
     padding: auto;
@@ -98,7 +109,7 @@ hr.pageseparator {
     margin: 1% auto;
 }
 
-hr.titleseparator{
+hr.titleseparator {
     background-color: var(--background-color);
     width: 60%;
     border-radius: 5px;
@@ -149,12 +160,17 @@ body {
 }
 
 section {
-    margin: auto 20% ;
     z-index: -2;
 }
 
 .skills-section {
     text-align: center;
+    margin: auto 20% ;
+}
+
+/*ContactSection*/
+#contact {
+    margin: auto 20% ;
 }
 
 .box {
@@ -162,7 +178,7 @@ section {
     background-color: var(--background-color);
     padding: 1% auto;
     border: 2px solid var(--background-color);
-    border-radius: 20px ;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -183,16 +199,16 @@ section {
     background-color: transparent;
 }
 
-.imagebox{
+.imagebox {
     position: relative;
     width: 50%;
 }
 
-.imagebox img{
+.imagebox img {
     display: inline-block;
 }
 
-.image-text{
+.image-text {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -228,7 +244,7 @@ section {
     background: var(--background-color);
     width: 100%;
     margin: 0;
-    margin-bottom:120px;
+    margin-bottom: 120px;
 }
 
 .curve {
@@ -270,7 +286,7 @@ section {
     background: var(--blue);
     width: 100%;
     margin: 0;
-    margin-bottom:150px;
+    margin-bottom: 150px;
 }
 
 .curve1 {
@@ -314,6 +330,7 @@ section {
     position: fixed;
     padding: 15px;
     color: var(--background-color);
+    z-index: 50;
 }
 
 .footer #LinkedIn {
@@ -331,15 +348,15 @@ section {
 }
 
 .skills-imgs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin: 20px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 80px;
 }
 
 .skills-img {
-    width:128px;
+    width: 128px;
     border-radius: 5px;
     margin: 2% auto;
     display: inline-block;
@@ -369,64 +386,74 @@ section {
 }
 
 .skill-overlay p {
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
- /* Style inputs with type="text", select elements and textareas */
- input[type=text], select, textarea {
-    width: 100%; /* Full width */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
     font: var(--font);
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-  input[type=checkbox] {
+input[type=checkbox] {
     font: var(--font);
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
     resize: vertical;
     margin-right: 100%;
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
     background-color: var(--red);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
     background-color: var(--yellow);
-  }
-  
-  /* Add a background color and some padding around the form */
-  .form-container {
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
     border-radius: 5px;
     background-color: var(--background-color);
     padding: 20px;
     position: relative;
     color: var(--yellow);
-  } 
+}
 
-  .form-overlay {
+.form-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -439,7 +466,7 @@ section {
     border-radius: 50px;
     text-align: center;
     display: none;
-  }
+}
 
 .feedback {
     color: var(--orange);
@@ -447,7 +474,7 @@ section {
     font-size: 70px;
 }
 
-  .close {
+.close {
     margin: auto;
     font-size: 50px;
     padding: 30px;
@@ -456,19 +483,24 @@ section {
     border-radius: 10px;
     width: 40%;
     cursor: pointer;
-  }
+}
 
-  .close:hover {
+.close:hover {
     background-color: var(--orange);
     cursor: pointer;
-  }
+}
 
 .last-section {
     padding-bottom: 100px;
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
 }
 
-#country, #fname, #lname, #job, #subject, #submitted {
+#country,
+#fname,
+#lname,
+#job,
+#subject,
+#submitted {
     font: var(--font);
     color: var(--blue);
 }
