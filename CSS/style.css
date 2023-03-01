@@ -121,9 +121,13 @@ header {
     .box {
         display: block !important;
     }
-    .imagebox {
+    #intro .imagebox {
         width: 100% !important;
         height: auto !important;
+    }
+    .imagebox img{
+        height: 100px !important;
+        width: auto !important;
     }
   }
 
@@ -533,4 +537,24 @@ input[type=submit]:hover {
 #submitted {
     font: var(--font);
     color: var(--blue);
+}
+
+.successbox {
+    background-color: var(--background-color);
+    text-align: center;  
+    top: 0;  
+    width: 100vw;
+    height: 100vh;
+}
+.successbox a {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 20%;
+    padding: 50px; 
+    position: absolute;
+    border-radius: 20px;
+    background-color: var(--green);
+    box-shadow: 0 5px 10px 0 var(--blue);
 }

@@ -90,7 +90,7 @@
 
 	<section id="timeline" class="topcurve1">
 		<div class="sectiontitle">
-			<h2 style="color: #fbc117; margin: 5px;">My Timeline</h2>
+			<h2 style="margin: 5px;" class="yellow">My Timeline</h2>
 		</div>
 		<div class="curve1"></div>
 
@@ -126,8 +126,7 @@
 						University
 					</div>
 					<div class="timeline__event__description">
-						<p>I started attending the University of Leeds in September of 2022 at the peak of COVID-19. You
-							could say that my first year was less eventful than I had hoped. If you would like to take a
+						<p>I started attending the University of Leeds in September of 2022 at the peak of COVID-19. If you would like to take a
 							look at some of my projects while at university please visit my <a
 								href="Projects.html">Projects Page.</a> You can also find out about all of the modules
 							that I have taken <a href="Education.html">here</a></p>
@@ -148,7 +147,7 @@
 					</div>
 					<div class="timeline__event__description">
 						<p>For a week in July I get a placement at TATA Steel in the Netherlands. I flew over to
-							Amsterdam and stayed with relatives I had never met before and had a week of work experience
+							Amsterdam and stayed with relatives and had a week of work experience
 							at the company. I got to see and do many exciting things in just a short space of time. If
 							you would like to learn more about this experience <a href="Experience.html">Click Here</a>
 						</p>
@@ -229,7 +228,6 @@
 				</div>
 			</div>
 
-
 			<!--Copy from here-->
 			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
 				<div class="timeline__event__icon ">
@@ -249,13 +247,6 @@
 				</div>
 			</div>
 			<!--To here-->
-
-
-
-
-
-
-
 
 		</div>
 
@@ -427,7 +418,7 @@
 			</p>
 		</div>
 		<div class="form-container">
-			<form name="contact" method="POST" data-netlify="true">
+			<form name="contact" method="POST" data-netlify="true" data-netlify-success-page="/HTML/success.html">
 
 				<label for="fname">First Name</label>
 				<input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -437,10 +428,10 @@
 
 				<label for="country">Country</label>
 				<select id="country" name="country">
+					<option value="uk">UK</option>
 					<option value="australia">Australia</option>
 					<option value="canada">Canada</option>
 					<option value="usa">USA</option>
-					<option value="uk">UK</option>
 				</select>
 
 				<label for="job">Would you like to offer me a Job?</label>
@@ -465,8 +456,8 @@
 			</div>
 		</div>
 	</section>
-
-	<script src="../JS/general.js"></script>
+	<!--Used to bring up origianl popup for frm submission-->
+	<!--<script src="../JS/general.js"></script>-->
 
 	<div class="footer">
 		<p>Get in contact <a href="index.html#GetInContact">here</a></p>
