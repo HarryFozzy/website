@@ -145,7 +145,7 @@ header {
   }
 
 .pagetitle {
-    font-size: 50px;
+    font-size: 30px;
     margin: 1% auto;
     color: var(--green);
 }
