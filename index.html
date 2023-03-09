@@ -15,16 +15,13 @@
 	<title>Harry's Website</title>
 </head>
 
-<style>
-	body {
-		background: linear-gradient(180deg, var(--blue) 30%, var(--background-color) 0%);
-	}
-</style>
-
 <body>
 	<header>
-		<h1 class="fullname">Harry Fotheringham</h1>
+		<h1 class="website-title">Harry Fotheringham</h1>
 	</header>
+
+	<!-- #region || Nav Bar -->
+
 	<section class="home" style="z-index: 99">
 		<div class="open-overlay" style="z-index: 99">
 			<span class="bar-top"></span>
@@ -47,7 +44,9 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="../JS/nav.js"></script>
 
-	<section id="intro" class="topcurve">
+	<!-- #endregion -->
+
+	<section id="intro" class="section-bubble1">
 
 		<div class="box">
 			<div class="imagebox" style="z-index: 1;">
@@ -60,14 +59,14 @@
 							</path>
 						</clipPath>
 					</defs>
-					<image width="100%" height="100%" preserveAspectRatio="xMinYMin slice"
-						xlink:href="/UI/ME-Cropped.jpg" clip-path="url(#user-space)" y="-10%" x="-5%" />
+					<image width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="/UI/ME-Cropped.jpg"
+						clip-path="url(#user-space)" y="-10%" x="-5%" />
 				</svg>
 			</div>
 			<div class="textbox" style="z-index: 1;">
 				<div class="pagetitle">
-				  <h1>About Me</h1>
-			  </div>
+					<h1>About Me</h1>
+				</div>
 				<hr class="titleseparator rounded">
 				<p>
 					My name is Harry Fotheringham, I have just completed my second year at the university of Leeds. I am
@@ -85,14 +84,12 @@
 				</p>
 			</div>
 		</div>
-		<div class="curve"></div>
 	</section>
 
-	<section id="timeline" class="topcurve1">
+	<section id="timeline" class="section-bubble2">
 		<div class="sectiontitle">
 			<h2 style="margin: 5px;" class="yellow">My Timeline</h2>
 		</div>
-		<div class="curve1"></div>
 
 		<div class="timeline">
 			<div class="timeline__event animated fadeInUp delay-2s timeline__event--type4">
@@ -126,9 +123,10 @@
 						University
 					</div>
 					<div class="timeline__event__description">
-						<p>I started attending the University of Leeds in September of 2022 at the peak of COVID-19. If you would like to take a
-							look at some of my projects while at university please visit my <a
-								href="Projects.html">Projects Page.</a> You can also find out about all of the modules
+						<p>I started attending the University of Leeds in September of 2022 at the peak of COVID-19. If you would
+							like to take a
+							look at some of my projects while at university please visit my <a href="Projects.html">Projects Page.</a>
+							You can also find out about all of the modules
 							that I have taken <a href="Education.html">here</a></p>
 					</div>
 				</div>
@@ -247,108 +245,105 @@
 				</div>
 			</div>
 			<!--To here-->
-
 		</div>
-
 	</section>
 
-
-	<section id="skills" class="skills-section">
-		<div class="sectiontitle">
-			<h2>Skills</h2>
+	<section id="skills" class=" section-bubble3">
+		<div class="skills-section">
+			<div class="sectiontitle">
+				<h2>Skills</h2>
+			</div>
+			<div class="skills-imgs">
+				<div class="skill-holder blue">
+					<img src="/UI/html-5.png" alt="HTML Logo" class="skills-img">
+					<div class="skill-overlay">
+						<p>HTML</p>
+					</div>
+				</div>
+				<div class="skill-holder yellow">
+					<img src="/UI/css-3.png" alt="CSS Logo" class="skills-img">
+					<div class="skill-overlay">
+						<p>CSS</p>
+					</div>
+				</div>
+				<div class="skill-holder green">
+					<img src="/UI/java-script.png" alt="JS Logo" class="skills-img">
+					<div class="skill-overlay">
+						<p>JS</p>
+					</div>
+				</div>
+				<div class="skill-holder orange">
+					<img src="/UI/sql.png" alt="SQL img" class="skills-img">
+					<div class="skill-overlay">
+						<p>SQL</p>
+					</div>
+				</div>
+				<div class="skill-holder red">
+					<img src="/UI/Arduino-Orange.png" alt="Arduino img" class="skills-img">
+					<div class="skill-overlay">
+						<p>Arduino</p>
+					</div>
+				</div>
+				<div class="skill-holder blue">
+					<img src="/UI/c-.png" alt="C++ img" class="skills-img">
+					<div class="skill-overlay">
+						<p>C++</p>
+					</div>
+				</div>
+				<div class="skill-holder yellow">
+					<img src="/UI/python.png" alt="Python img" class="skills-img">
+					<div class="skill-overlay">
+						<p>Python</p>
+					</div>
+				</div>
+				<div class="skill-holder green">
+					<img src="/UI/azure.png" alt="Azure img" class="skills-img">
+					<div class="skill-overlay">
+						<p>Azure Fundamentals</p>
+					</div>
+				</div>
+				<div class="skill-holder orange">
+					<img src="/UI/LaTeX-green.png" alt="LaTeX img" class="skills-img">
+					<div class="skill-overlay">
+						<p>LaTeX</p>
+					</div>
+				</div>
+				<div class="skill-holder red">
+					<img src="/UI/Cura.png" alt="Cura img" class="skills-img">
+					<div class="skill-overlay">
+						<p>Cura 3D Printing</p>
+					</div>
+				</div>
+				<div class="skill-holder green">
+					<img src="/UI/SW.png" alt="SW img" class="skills-img">
+					<div class="skill-overlay">
+						<p>SOLIDWORKS</p>
+					</div>
+				</div>
+				<div class="skill-holder green">
+					<img src="/UI/driveworks-logo.png" alt="DW img" class="skills-img">
+					<div class="skill-overlay">
+						<p>DriveWorks</p>
+					</div>
+				</div>
+				<div class="skill-holder green">
+					<img src="/UI/Matlab_Logo.png" alt="MatLab img" class="skills-img">
+					<div class="skill-overlay">
+						<p>MatLab</p>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="skills-imgs">
-			<div class="skill-holder blue">
-				<img src="/UI/html-5.png" alt="HTML Logo" class="skills-img">
-				<div class="skill-overlay">
-					<p>HTML</p>
-				</div>
-			</div>
-			<div class="skill-holder yellow">
-				<img src="/UI/css-3.png" alt="CSS Logo" class="skills-img">
-				<div class="skill-overlay">
-					<p>CSS</p>
-				</div>
-			</div>
-			<div class="skill-holder green">
-				<img src="/UI/java-script.png" alt="JS Logo" class="skills-img">
-				<div class="skill-overlay">
-					<p>JS</p>
-				</div>
-			</div>
-			<div class="skill-holder orange">
-				<img src="/UI/sql.png" alt="SQL img" class="skills-img">
-				<div class="skill-overlay">
-					<p>SQL</p>
-				</div>
-			</div>
-			<div class="skill-holder red">
-				<img src="/UI/Arduino-Orange.png" alt="Arduino img" class="skills-img">
-				<div class="skill-overlay">
-					<p>Arduino</p>
-				</div>
-			</div>
-			<div class="skill-holder blue">
-				<img src="/UI/c-.png" alt="C++ img" class="skills-img">
-				<div class="skill-overlay">
-					<p>C++</p>
-				</div>
-			</div>
-			<div class="skill-holder yellow">
-				<img src="/UI/python.png" alt="Python img" class="skills-img">
-				<div class="skill-overlay">
-					<p>Python</p>
-				</div>
-			</div>
-			<div class="skill-holder green">
-				<img src="/UI/azure.png" alt="Azure img" class="skills-img">
-				<div class="skill-overlay">
-					<p>Azure Fundamentals</p>
-				</div>
-			</div>
-			<div class="skill-holder orange">
-				<img src="/UI/LaTeX-green.png" alt="LaTeX img" class="skills-img">
-				<div class="skill-overlay">
-					<p>LaTeX</p>
-				</div>
-			</div>
-			<div class="skill-holder red">
-				<img src="/UI/Cura.png" alt="Cura img" class="skills-img">
-				<div class="skill-overlay">
-					<p>Cura 3D Printing</p>
-				</div>
-			</div>
-			<div class="skill-holder green">
-				<img src="/UI/SW.png" alt="SW img" class="skills-img">
-				<div class="skill-overlay">
-					<p>SOLIDWORKS</p>
-				</div>
-			</div>
-			<div class="skill-holder green">
-				<img src="/UI/driveworks-logo.png" alt="DW img" class="skills-img">
-				<div class="skill-overlay">
-					<p>DriveWorks</p>
-				</div>
-			</div>
-			<div class="skill-holder green">
-				<img src="/UI/Matlab_Logo.png" alt="MatLab img" class="skills-img">
-				<div class="skill-overlay">
-					<p>MatLab</p>
-				</div>
-			</div>
-		</div>
-
 	</section>
 
-	<hr class="pageseparator">
-	<section id="hobbies" class="hobbies">
+	<section id="hobbies" class="hobbies section-bubble4">
 		<div class="sectiontitle">
 			<h2 id="Hobbies-Interests">Hobbies & Interests</h2>
 		</div>
 		<div class="box">
 			<div class="imagebox">
-				<img src="/UI/Sports-slightlySmaller.png" alt="Sports Images">
-				<div class="image-text background-color">
+				<img src="/UI/Sport.png" alt="Sports Images">
+				<div class="image-text blue">
 					<p>Sports</p>
 				</div>
 			</div>
@@ -356,7 +351,9 @@
 				<h1 class="pagetitle">Sports</h1>
 				<hr class="titleseparator rounded">
 				<p>
-					I play ...
+					I play many different sports, including Football, Hockey, Badminton and Cricket. Sport and fitness is a big
+					part of my life. I go to the gym most mornings and I a, currently training for the Addidas Manchester Marathon
+					on the 16th of April 2023.
 				</p>
 			</div>
 		</div>
@@ -366,7 +363,8 @@
 				<hr class="titleseparator rounded">
 				<p>
 					This is a recent new hobbie of mine since I aquired a 3D printer for my Birthday last year.
-					Naturally this meant that everybody got 3D printed Christmas Presents. If you would like to take a look at some of my prints please <a href="/HTML/Projects.html#3DPrints">Click Here</a>
+					Naturally this meant that everybody got 3D printed Christmas Presents. If you would like to take a look at
+					some of my prints please <a href="/HTML/Projects.html#3DPrints">Click Here</a>
 				</p>
 			</div>
 			<div class="imagebox">
@@ -378,7 +376,7 @@
 		</div>
 		<div class="box">
 			<div class="imagebox">
-				<img src="/UI/3DPrinting.png" alt="Sports Images">
+				<img src="/UI/Physics.png" alt="Sports Images">
 				<div class="image-text green">
 					<p>Physics</p>
 				</div>
@@ -400,59 +398,59 @@
 				</p>
 			</div>
 			<div class="imagebox">
-				<img src="/UI/3DPrinting.png" alt="Sports Images">
-				<div class="image-text green">
+				<img src="/UI/Animals.png" alt="Sports Images">
+				<div class="image-text yellow">
 					<p>Animals</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section id="contact" class="section-bubble5">
+		<div class="last-section">
+			<div class="sectiontitle">
+				<h2 id="GetInContact">Get in contact</h2>
+				<p>Contact Details <br>
+					Email: fotheringhamh16@gmail.com
+				</p>
+			</div>
+			<div class="form-container">
+				<form name="contact" method="POST" data-netlify="true" data-netlify-success-page="/HTML/success.html">
 
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-	<section id="contact" class="last-section">
-		<div class="sectiontitle">
-			<h2 id="GetInContact">Get in contact</h2>
-			<p>Contact Details <br>
-				Email: fotheringhamh16@gmail.com
-			</p>
-		</div>
-		<div class="form-container">
-			<form name="contact" method="POST" data-netlify="true" data-netlify-success-page="/HTML/success.html">
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					<label for="country">Country</label>
+					<select id="country" name="country">
+						<option value="uk">UK</option>
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="usa">USA</option>
+					</select>
 
-				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					<label for="job">Would you like to offer me a Job?</label>
+					<input id="job" name="job" type="checkbox">
 
-				<label for="country">Country</label>
-				<select id="country" name="country">
-					<option value="uk">UK</option>
-					<option value="australia">Australia</option>
-					<option value="canada">Canada</option>
-					<option value="usa">USA</option>
-				</select>
+					<label for="subject">Comments</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-				<label for="job">Would you like to offer me a Job?</label>
-				<input id="job" name="job" type="checkbox">
+					<div id="submit-container">
+						<button class="learn-more submitted">
+							<span class="circle" aria-hidden="true">
+								<span class="icon arrow"></span>
+							</span>
+							<span class="button-text">Submit</span>
+						</button>
+					</div>
 
-				<label for="subject">Comments</label>
-				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-				<div id="submit-container">
-					<button class="learn-more submitted">
-						<span class="circle" aria-hidden="true">
-							<span class="icon arrow"></span>
-						</span>
-						<span class="button-text">Submit</span>
-					</button>
+				</form>
+				<div class="form-overlay" id="form-overlay">
+					<h1 class="feedback">Thank you for your feedback</h1>
+					<div class="close submitted">Close</div>
 				</div>
-
-			</form>
-			<div class="form-overlay" id="form-overlay">
-				<h1 class="feedback">Thank you for your feedback</h1>
-				<div class="close submitted">Close</div>
 			</div>
 		</div>
 	</section>
