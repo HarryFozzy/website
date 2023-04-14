@@ -73,6 +73,15 @@
 
 /* #endregion */
 
+.margin-auto-important{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.mb{
+    margin-bottom: 2%;
+}
+
 * {
     font-family: var(--font);
     box-sizing: border-box;
