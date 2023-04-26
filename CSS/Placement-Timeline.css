@@ -3,7 +3,6 @@
   --background-color: #fcf3e4;
   --border-color: #E5E5E5;
   --title-color: #e40001;
-  --tertiary-color: #14213D;
   --header-color: #edf2f4;
   --red: #e40001;
   --blue: #9ac8c8;
@@ -13,112 +12,210 @@
   --font: 'Fredoka One', cursive;
 }
 
-.line {
-    background: var(--tertiary-color);
-    margin: 20px auto;
-    padding: 20px;
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-* {
-    margin: 0 auto;
-    padding: 0 auto;
-  }
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* tile container */
-.tile {
-    position: relative;
-    max-width: 80%;
+.placement-timeline-section {
+  background: var(--orange);
+  padding: 50px 0;
+}
+
+.placement-timeline-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.placement-timeline-section h1 {
+  font-size: 2.5rem;
+}
+
+.placement-timeline-section h2 {
+  font-size: 1.3rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.placement-timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.placement-timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.placement-timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: var(--background-color);
+}
+
+.placement-timeline ol li:last-child {
+  width: 280px;
+}
+
+.placement-timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.placement-timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--yellow);
+}
+
+.placement-timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 330px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: var(--green);
+  background: var(--background-color);
+}
+
+.placement-timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.placement-timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.placement-timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: var(--background-color) transparent transparent transparent;
+}
+
+.placement-timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.placement-timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent var(--background-color);
+}
+
+.placement-timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.placement-timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.placement-timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.placement-timeline .disabled {
+  opacity: .5;
+}
+
+.placement-timeline .arrows img {
+  width: 45px;
+  height: 45px;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .placement-timeline ol,
+  .placement-timeline ol li {
+    width: auto; 
   }
   
-  /* setting padding based on even or odd */
-  .tile:nth-child(odd) {
-    padding: 30px 0 30px 30px;
-  }
-  .tile:nth-child(even) {
-    padding: 30px 30px 30px 0;
-  }
-  /* Global ::before */
-  .tile::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    border: solid var(--title-color);
+  .placement-timeline ol {
+    padding: 0;
+    transform: none !important;
   }
   
-  /* Setting the border of top, bottom, left */
-  .tile:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 5px 0 5px 5px;
-    border-radius: 50px 0 0 50px;
+  .placement-timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
   }
   
-  /* Setting the border of top, bottom, right */
-  .tile:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0 50px 50px 0;
+  .placement-timeline ol li:first-child {
+    margin-top: 25px;
   }
   
-  /* Removing the border if it is the first tile */
-  .tile:first-child::before {
-    border-top: 0;
-    border-top-left-radius: 0;
+  .placement-timeline ol li:not(:first-child) {
+    margin-left: auto;
   }
   
-  /* Removing the border if it is the last tile  and it's odd */
-  .tile:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
+  .placement-timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
   }
   
-  /* Removing the border if it is the last tile  and it's even */
-  .tile:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
+  .placement-timeline ol li div {
+    position: static;
   }
   
-  /* detailsrmation about the timeline */
-  .details {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    color: var(--primary-color);
-    border-radius: 10px;
-    padding: 10px;
+  .placement-timeline ol li:nth-child(odd) div {
+    transform: none;
   }
   
-  /* Title of the tile */
-  .title {
-    color: var(--title-color);
-    position: relative;
+  .placement-timeline ol li:nth-child(odd) div::before,
+  .placement-timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid var(--background-color);
+    height: 25px;
   }
   
-  /* Timeline dot  */
-  .title::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 999px;
-    border: 3px solid var(--title-color);
+  .placement-timeline ol li:last-child,
+  .placement-timeline ol li:nth-last-child(2) div::before,
+  .placement-timeline ol li:not(:last-child)::after,
+  .placement-timeline .arrows {
+    display: none;
   }
-  
-  /* text right if the tile is even  */
-  .tile:nth-child(even) > .details > .title {
-    text-align: right;
-  }
-  
-  /* setting dot to the left if the tile is odd */
-  .tile:nth-child(odd) > .details > .title::before {
-    left: -350%
-  }
-  
-  /* setting dot to the right if the tile is odd */
-  .tile:nth-child(even) > .details > .title::before {
-    right: -350%;
-  }  
+}
