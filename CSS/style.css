@@ -515,3 +515,25 @@ input[type=submit]:hover {
     100%  {fill: var(--red)}
   }
 /* #endregion */
+
+/* #region || 404 */
+.page-not-found a {
+    padding: 10%;
+    border-radius: 50%;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation-name: toggle-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes toggle-color {
+    0%   {background-color: var(--red);}
+    20%  {background-color: var(--blue)}
+    40%  {background-color: var(--yellow)}
+    60%  {background-color: var(--green)}
+    80%  {background-color: var(--orange)}
+    100%  {background-color: var(--red)}
+  }
+/* #endregion */
