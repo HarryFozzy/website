@@ -537,3 +537,12 @@ input[type=submit]:hover {
     100%  {background-color: var(--red)}
   }
 /* #endregion */
+
+/* #region || Experience */
+
+.experience p {
+    text-align: center;
+    margin: 0% 20%;
+}
+
+/* #endregion */
