@@ -217,7 +217,12 @@ header {
 
 .imagebox {
     position: relative;
-    width: 50%;
+    height: 150%;
+}
+
+.imagebox-svg {
+    position: relative;
+    width: 40%;
 }
 
 .imagebox img {
@@ -227,6 +232,15 @@ header {
 .hobbies-img-size {
     width: 15vw;
     height: auto;
+    padding: 20%;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.p-10 {
+    padding: 10px;
 }
 
 /* #region || Footer */
