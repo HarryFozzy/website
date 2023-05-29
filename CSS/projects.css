@@ -129,6 +129,7 @@
 }
 .project_card__button {
   display: inline-block;
+  margin-top: 10px;
   padding: 10px 20px;
   color: var(--orange);
   border: 1px solid var(--orange);
