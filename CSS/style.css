@@ -91,7 +91,7 @@
 
 body {
     background-color: var(--background-color);
-    color: var(--border-color);
+    color: var(--background-color);
     margin: 0%;
     padding: 0%;
     align-items: center;
@@ -186,6 +186,8 @@ header {
 
 .sectiontitle p {
     font-size: 20px;
+    width: 60%;
+    margin: auto;
 }
 
 .skills-section {
