@@ -1,0 +1,35 @@
+.page-not-found a {
+  padding: 10%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  animation-name: toggle-color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes toggle-color {
+  0%   {background-color: var(--red);}
+  20%  {background-color: var(--blue)}
+  40%  {background-color: var(--yellow)}
+  60%  {background-color: var(--green)}
+  80%  {background-color: var(--orange)}
+  100%  {background-color: var(--red)}
+}
+
+@keyframes toggle-text-color {
+  0%   {color: var(--red);}
+  25%  {color: var(--blue)}
+  50%  {color: var(--yellow)}
+  75%  {color: var(--orange)}
+  100%  {color: var(--red)}
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  animation-name: toggle-text-color;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}

@@ -108,6 +108,7 @@ td {
     margin: auto;
     border-radius: 10px;
     font-size: 30px;
+    margin-bottom: 5px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -121,6 +122,7 @@ td {
     display: none;
     overflow: hidden;
     width: 100%;
+    margin-bottom: 5px;
   } 
 
   .accordian-container {
