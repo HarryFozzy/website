@@ -267,6 +267,15 @@ header {
     position: absolute;
 }
 
+.footer #CV {
+    right: 50px;
+    top: 5px;
+    padding: 0;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+
 .mycode {
     position: relative;
     color: var(--yellow);
