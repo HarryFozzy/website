@@ -131,14 +131,25 @@ header {
     .skill-overlay p {
         font-size: 10px;
     }
-    .pagetitle h1 {
+    #intro.pagetitle {
         font-size: 25px;
+    }
+    .pagetitle {
+        font-size: 20px !important;
+    }
+    #intro.textbox
+    .textbox {
+        width: inherit !important;
     }
     .textbox p{
         font-size: small;
     }
     .sectiontitle h2 {
         font-size: 25px;
+    }
+    .sectiontitle p{
+        text-align: center;
+        font-size: 11px !important;
     }
     .box {
         display: block !important;
@@ -147,9 +158,21 @@ header {
         width: 100% !important;
         height: auto !important;
     }
-    .imagebox img{
-        height: 100px !important;
-        width: auto !important;
+    .imagebox {
+        height: 200px !important;
+        width: 200px !important;
+        margin: auto;
+    }
+    .imagebox img {
+        height: 100%;
+        width: 100%;
+    }
+    .imagebox-svg {
+        height: auto !important;
+        width: inherit !important;
+    }
+    .footer, .mycode {
+        font-size: 15px !important;
     }
   }
 
