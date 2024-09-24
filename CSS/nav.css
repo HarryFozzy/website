@@ -533,14 +533,19 @@ Animation keyframes
 @media (max-width: 640px) {
   nav ul li a {
     font-size: 11px;
+    transform: rotate(-90deg);
   }
   nav li a:after {
     font-size: 0.6rem;
+    transform: rotate(-90deg);
+    display: none;
   }
   .open-overlay {
     right: 1rem;
   }
   nav li a:before {
     width: 15px;
+    transform: rotate(-90deg);
+    display: none;
   }
 }
