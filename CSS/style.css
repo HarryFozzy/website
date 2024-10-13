@@ -530,6 +530,18 @@ input[type=submit]:hover {
 
 /* #endregion*/
 
+#DriveWorks-Experience .textbox li {
+    margin: 10px 20px;
+}
+
+#DriveWorks-Experience .textbox *{
+ margin-top: 10px;
+}
+
+#DriveWorks-Experience .textbox h3{
+    font-size: 25px;
+   }
+
 /* #region || Success Page */
 .successbox {
     background-color: var(--background-color);
