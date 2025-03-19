@@ -6,20 +6,19 @@ section #project-features {
   }
   
   .gallery {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 300px;
+    display: block;
+    margin: auto;
   }
   
   .project-feature-container {
     position: relative;
-    width: 10%;
-    height: 100%;
+    width: 100%;
+    height: 70px;
     border-radius: 10px;
     transition: all ease-out 0.5s;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .project-feature-container img {
@@ -27,13 +26,13 @@ section #project-features {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid #fff;
+    border: 2px solid var(--yellow);
     transition: all ease-out 0.5s;
     cursor: pointer;
 }
 
 .project-feature-container:hover {
-    width: 25%;
+    height: 210px;
 }
 
 .overlay-text {
@@ -81,11 +80,11 @@ section #project-images {
         justify-content: center; /* Centers horizontally */
         border: 5px solid transparent;
         box-sizing: border-box;
-        width: 33.33%;
+        margin: auto;
+        width: 85%;
         position: relative;
-        cursor: pointer;
         overflow: hidden;
-        height: 285px; /* Fix height for consistency */
+        height: 200px; /* Fix height for consistency */
     }
     
     /* Adjust image behavior */
@@ -95,8 +94,6 @@ section #project-images {
         object-fit: cover; /* Crops tall images to keep the middle */
         display: block;
     }
-    
-    
     
     
     /* Image Placeholder Styles
@@ -133,10 +130,7 @@ section #project-images {
     background: #333;
     transform: scale(0);
     }
-    .img-list li:hover:before {
-    opacity: .5;
-    transform: scale(1);
-    }
+
     .img-list li:after {
     transition: all .6s ease .2s;
     content: "";
@@ -149,8 +143,4 @@ section #project-images {
     background: #000;
     opacity: 0;
     transform: scale(0);
-    }
-    .img-list li:hover:after {
-    opacity: .35;
-    transform: scale(1);
     }

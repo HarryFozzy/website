@@ -48,76 +48,379 @@
 
 	<!-- #endregion -->
 
-	<section id="intro" class="section-bubble_type-a-bg b-bg-after section-divider">
+	<section id="intro" class="section-bubble_type-a-bg r-bg-after section-divider">
 
 		<div class="box" style="z-index: 1;">
-                <video width="640" height="480" controls>
-                    <source src="/UI/RobotArm.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video> 
-
+			<div class="imagebox">
+				<img src="/UI/DroneProject/Entire_System_-_No_Stand_-_No_Transparency-removebg-preview.png"
+					alt="3D Printing Images" class="">
+			</div>
 			<div class="textbox green" style="z-index: 1;">
 				<div class="pagetitle">
 					<h1>Design, Build, Test - Drone Payload Transfer System</h1>
 				</div>
 				<hr class="titleseparator rounded yellow">
 				<p>
-					Hi! We are Team 149, Andrew, Faizaan, Harry, Jack and Niall. We would like to welcome you to our website designed for our project! On the right you can see a video of our early arm workings for this project. <br><br> Please keep scrolling to find out more about the project and get an understanding of its workings.
+					Hi! We are Team 149, Andrew, Faizaan, Harry, Jack and Niall. We would like to welcome you to our
+					website designed for our project! On the right you can see a video of our early arm workings for
+					this project. <br><br> Please keep scrolling to find out more about the project and get an
+					understanding of its workings.
 				</p>
 			</div>
 		</div>
 	</section>
 
-	<section id="project-features" class="blue-background section-bubble_type-a-b g-bg-after section-divider">
+	<section id="project-features" class="red-background section-bubble_type-a-r b-bg-after section-divider">
 		<div class="sectiontitle">
 			<h2 style="margin: 5px;" class="background-color">Key Features</h2>
 		</div>
 
 		<div class='gallery'>
 			<div class="project-feature-container">
-				<img src='/UI/DroneProject/Camera Marker Detection.png' alt=''>
+				<img src='/UI/DroneProject/Camera/Camera Marker Detection.png' alt=''>
 				<h1 class="overlay-text">Camera Vision</h1>
 			</div>
 			<div class="project-feature-container">
-			<img src='/UI/DroneProject/Drone-Stand.JPG' alt=''>
+				<img src='/UI/DroneProject/SolidWorks Renders/Drone-Stand.JPG' alt=''>
 				<h1 class="overlay-text">Drone</h1>
 			</div>
 			<div class="project-feature-container">
-			<img src='/UI/DroneProject/All Electronics Connected.jpg' alt=''>
+				<img src='/UI/DroneProject/Electronics/All Electronics Connected.jpg' alt=''>
 				<h1 class="overlay-text">Electronics</h1>
 			</div>
 			<div class="project-feature-container">
-			<img src='/UI/DroneProject/Entire System - No Stand - No Transparency.JPG' alt=''>
+				<img src='/UI/DroneProject/SolidWorks Renders/Entire System - No Stand - No Transparency.JPG' alt=''>
 				<h1 class="overlay-text">Transfer System</h1>
 			</div>
-		  </div>
-		
+		</div>
+
 	</section>
 
-	<section id="project-images" class="green-background section-bubble_type-a-g o-bg-after section-divider">
+	<section id="timeline" class="blue-background section-bubble_type-b-b bg-bg-after section-divider">
+		<div class="sectiontitle">
+			<h2 style="margin: 5px;" class="background-color">Transfer Process</h2>
+		</div>
+
+		<div class="timeline">
+			<div class="timeline__event animated fadeInUp delay-2s timeline__event--type4">
+				<div class="timeline__event__icon">
+					<i class="lni-burger"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					(1)
+				</div>
+				<div class="timeline__event__content">
+					<div class="timeline__event__title">
+						Drone Locating
+					</div>
+					<div class="timeline__event__description">
+						The two drones will fly to a designated transfer zone (safe transfer zone), in the zone they
+						will communicate via telemetry modules and orientate themselves correctly using a GPS and a
+						Compass in the allowable transfer region. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline__event animated fadeInUp timeline__event--type3">
+				<div class="timeline__event__icon">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					(2)
+				</div>
+				<div class="timeline__event__content">
+					<div class="timeline__event__title">
+						Camera Feedback
+					</div>
+					<div class="timeline__event__description">
+						<p>
+						<p>The camera will detect the two ArUco markers to detect relative positions. Communicate with
+							flight controller to reached desired position. Use positioning to actuate arm to correct
+							position. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
+				<div class="timeline__event__icon">
+					<i class="lni-slim"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					(3)
+				</div>
+				<div class="timeline__event__content">
+					<div class="timeline__event__title">
+						Arm Actuation
+					</div>
+					<div class="timeline__event__description">
+						<p>A Raspberry Pi processes the camera data, then extends the Servos to a desired position. In
+							this position the actuator extends placing the payload in the receiver.
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+				<div class="timeline__event__icon ">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					(4)
+				</div>
+				<div class="timeline__event__content ">
+					<div class="timeline__event__title">
+						Payload Transfer
+					</div>
+					<div class="timeline__event__description">
+						<p>Once the actuator is extended the energise to hold electromagents turn on connecting to the
+							reciever. The energise to release electromagents switch pulling the payload from the carrier
+							to the receiver.</p>
+					</div>
+				</div>
+			</div>
+			<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type4">
+				<div class="timeline__event__icon ">
+					<i class="lni-cake"></i>
+
+				</div>
+				<div class="timeline__event__date">
+					(5)
+				</div>
+				<div class="timeline__event__content ">
+					<div class="timeline__event__title">
+						Disengage
+					</div>
+					<div class="timeline__event__description">
+						<p>Once transfer is complete the engise to hold magnets are switched off and the arms
+							disconnect. The arms return to safe flying positions and the drone continue on.
+						</p>
+					</div>
+				</div>
+				<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type4">
+					<div class="timeline__event__icon ">
+						<i class="lni-cake"></i>
+
+					</div>
+					<div class="timeline__event__date">
+						(X)
+					</div>
+					<div class="timeline__event__content ">
+						<div class="timeline__event__title">
+							Counter-balance
+						</div>
+						<div class="timeline__event__description">
+							<p>A future step is to implement a counterbalance that will extend with the arm extension
+								and keep the centre of mass in the workable region of the drone.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section id="project-images" class="background-color section-bubble_type-a-bg g-bg-after section-divider">
+		<div class="sectiontitle">
+			<h2 style="margin: 5px;" class="green">Working Videos</h2>
+		</div>
+
+		<div class="box" style="z-index: 1;">
+			<video width="80%" height="auto" muted controls>
+				<source src="/UI/RobotArm.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+			<div class="textbox green" style="z-index: 1;">
+				<div class="pagetitle">
+					<h1>First working arm</h1>
+				</div>
+				<hr class="titleseparator rounded yellow">
+				<p>
+					This is a video of our very first working arm. It shows our first iteration of the code and
+					understanding of programming using a Raspberry Pi and GPIO Pins. It also shows a prelimnary build
+					from old parts which inspired our design and enabled our CAD developers to work at the same time as
+					our programmers.
+				</p>
+			</div>
+		</div>
+
+		<div class="box" style="z-index: 1;">
+			<video width="80%" height="auto" muted controls>
+				<source src="/UI/DroneProject/Camera Feedback Control.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+			<div class="textbox green" style="z-index: 1;">
+				<div class="pagetitle">
+					<h1>Arm Working on Camera Feedback</h1>
+				</div>
+				<hr class="titleseparator rounded yellow">
+				<p>
+					This is a video of our arm on a lego stand moving as the ArUco Markers are moved into different
+					positions. It works by using one marker as a control and measuring the relative distance. Then the
+					arm will move to try in an attempt to correct the Z dimension. As the movement f the arm doesnt
+					cause a marker movement it always reaches its maximu extension point but once placed on the arms
+					this will work as required.
+				</p>
+			</div>
+		</div>
+
+		<div class="box" style="z-index: 1;">
+			<video width="80%" height="auto" muted controls>
+				<source src="/UI/DroneProject/Electronic Testing.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+			<div class="textbox green" style="z-index: 1;">
+				<div class="pagetitle">
+					<h1>Complete working Circuit</h1>
+				</div>
+				<hr class="titleseparator rounded yellow">
+				<p>
+					This is a video of a complete working circuit. The most obvious movement is from the servos and the
+					linear actuator but on certain button presses the electromagnets can be toggled on and off too. A
+					new control method has also been implemented here for the servos using hardware timing which removes
+					the initial jitter shown in some of the other videos.
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="project-images" class="green-background section-bubble_type-a-g y-bg-after section-divider">
 		<div class="sectiontitle">
 			<h2 style="margin: 5px;" class="yellow">Project Images</h2>
 		</div>
 
 		<ul class="img-list">
 			<li><span class="img-placeholder">- SOLIDWORKS Renders -</span></li>
-			<li><img src="/UI/DroneProject/Entire System - No Stand - No Transparency.JPG"></li>
-			<li><img src="/UI/DroneProject/Carrier Drone - No Stand.JPG"></li>
-			<li><img src="/UI/DroneProject/Reciever Drone - No Stand.JPG"></li>
-			<li><img src="/UI/DroneProject/Drone-Stand.JPG"></li>
+			<li><img src="/UI/DroneProject/SolidWorks Renders/Entire System - No Stand - No Transparency.JPG"></li>
+			<li><img src="/UI/DroneProject/SolidWorks Renders/Carrier Drone - No Stand.JPG"></li>
+			<li><img src="/UI/DroneProject/SolidWorks Renders/Reciever Drone - No Stand.JPG"></li>
+			<li><img src="/UI/DroneProject/SolidWorks Renders/Drone-Stand.JPG"></li>
+			<li><span class="img-placeholder">- Model Building -</span></li>
+			<li><img src="/UI/DroneProject/Model Building/Entire Build.jpg"></li>
+			<li><img src="/UI/DroneProject/Model Building/Holder Size Test.jpg"></li>
+			<li><img src="/UI/DroneProject/Model Building/Holding Hard.jpg"></li>
+			<li><img src="/UI/DroneProject/Model Building/Metal Arm.jpg"></li>
+			<li><img src="/UI/DroneProject/Model Building/Arm Build.jpg"></li>
 			<li><span class="img-placeholder">- Electronics -</span></li>
-			<li><img src="/UI/DroneProject/All Electronics Connected.jpg"></li>
-			<li><img src="/UI/DroneProject/All Electronics Connected.jpg"></li>
-			<li><img src="/UI/DroneProject/All Electronics Connected.jpg"></li>
+			<li><img src="/UI/DroneProject/Electronics/All Electronics Connected.jpg"></li>
+			<li><img src="/UI/DroneProject/Electronics/Arduino Circuitry.jpg"></li>
+			<li><img src="/UI/DroneProject/Electronics/Last Minute Prep.jpg"></li>
+			<li><img src="/UI/DroneProject/Electronics/PCB Back.jpg"></li>
+			<li><img src="/UI/DroneProject/Electronics/PCB Front.jpg"></li>
 			<li><span class="img-placeholder">- Camera Feedback -</span></li>
-			<li><img src="/UI/DroneProject/ArUco Stand.jpg"></li>
-			<li><img src="/UI/DroneProject/Camera Marker Test Rig.jpg"></li>
-			<li><img src="/UI/DroneProject/Camera Marker Detection.png"></li>
-			<li><span class="img-placeholder">- Component Testing -</span></li>
-			<li><img src="/UI/DroneProject/Camera Marker Detection.png"></li>
+			<li><img src="/UI/DroneProject/Camera/ArUco Stand.jpg"></li>
+			<li><img src="/UI/DroneProject/Camera/Camera Marker Test Rig.jpg"></li>
+			<li><img src="/UI/DroneProject/Camera/Camera Marker Detection.png"></li>
+			<li><span class="img-placeholder">- Servo Testing -</span></li>
+			<li><img src="/UI/DroneProject/Servo Calibration/Servo Calibration.jpg"></li>
 		</ul>
 
-		
+	</section>
+
+	<section id="Meet the Team" class="green yellow-background section-bubble_type-b-y bg-bg-after section-divider">
+		<div class="sectiontitle">
+			<h2 id="Drone-Squad">Meet the Team</h2>
+		</div>
+
+		<div class="box">
+			<div class="imagebox">
+				<img src="/UI/DroneProject/The Team/Harry-Fotheringham.jpg" alt="Coding Image" class="circle">
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">Harry Fotheringham - Team Lead - <a
+						href="https://www.linkedin.com/in/harry-fotheringham-mn20hjf/">LinkedIn</a></h1>
+				<hr class="titleseparator rounded background-color">
+				<p>
+					Harry is well suited to this role through his engineering degree and job. At university, he com-
+					pleted Arduino projects to code RC helicopters to hover, a “Mars rover” to travel a specified
+					distance, and a colonoscopy robotic arm. Harry has been exposed to many programming
+					languages and concepts, including Python, Visual Basic, JavaScript, other web languages,
+					and SQL, giving him a broad understanding of coding languages and logic. He is also work-
+					ing on the IMechE UAS Challenge, where he is part of the software team, learning about
+					flight controllers and other specific drone systems.
+				</p>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="imagebox ">
+				<img src="/UI/DroneProject/The Team/Andrew-Mahrous.jpg" alt="Coding Image" class="circle">
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">Andrew Mahrous - Resource Manager - <a
+						href="https://www.linkedin.com/in/andrew-mahrous/">LinkedIn</a></h1>
+				<hr class="titleseparator rounded background-color">
+				<p>
+					Andrew is an innovative Systems Engineer with extensive experience at Airbus. He specialises in
+					systems design, integration, and control systems, contributing to the design of advanced drone
+					payload transfer systems. At Airbus, he developed and integrated complex aerospace systems, ensuring
+					industry compliance. He collaborated with cross-functional teams to resolve system issues and used
+					MATLAB for system modelling and simulation. Andrew is proficient in System Design and Integration,
+					Project Management, Problem-solving, and Control Systems Development.
+				</p>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="imagebox ">
+				<img src="/UI/DroneProject/The Team/Jack-Dawson.jpg" alt="Coding Image" class="circle">
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">Jack Dawson - Quality Assurance Officer - <a
+						href="https://www.linkedin.com/in/jack-dawson-b56460185/">LinkedIn</a></h1>
+				<hr class="titleseparator rounded background-color">
+				<p>
+					Jack has several years of experience using CAD software, specifically SOLIDWORKS. He
+					can design complex structures on the computer and, with his two years of experience in
+					design for manufacture, he understands how to modify these designs to maximise in-house
+					component manufacturing.
+				</p>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="imagebox ">
+				<img src="/UI/DroneProject/The Team/Niall Taylor.jpg" alt="Coding Image" class="circle">
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">Niall Taylor - Treasurer</h1>
+				<hr class="titleseparator rounded background-color">
+				<p>
+					Niall has 5 years of experience as a supermarket cashier, requiring accurate money han-
+					dling. He also spent a year on the Mechanical Engineering Society committee at the Uni-
+					versity of Leeds, working with the treasurer on expenditure approval. This experience has
+					equipped him to succeed as project treasurer. Niall has completed a year-long challenge
+					of modifying an RC plane to maximise its payload, gaining skills and knowledge in aircraft
+					stability aerodynamics. This project allows him to expand his aerodynamic knowledge to
+					rotary-wing aircraft, helping the team achieve the most stable system possible.
+				</p>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="imagebox ">
+				<img src="/UI/DroneProject/The Team/Faizaan-Baig.jpg" alt="Coding Image" class="circle">
+			</div>
+			<div class="textbox">
+				<h1 class="pagetitle">Faizaan Baig - Documentation Specialist - <a
+						href="https://www.linkedin.com/in/faizaanbaig/">LinkedIn</a></h1>
+				<hr class="titleseparator rounded background-color">
+				<p>
+					Faizaan is a drone pilot with special expertise in selecting the best drones for missions. He excels
+					in designing and manufacturing drones and payload transfer systems. His knowledge of materials
+					science, combined with his drone expertise, ensures optimal design choices. As a Drive Test Engineer
+					at Jaguar Land Rover, Faizaan extensively worked on finite element analysis of various materials,
+					shapes, and structures, enabling him to design structurally superior drone components.
+				</p>
+			</div>
+		</div>
+
 	</section>
 
 	<div class="footer">
